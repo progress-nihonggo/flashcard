@@ -1,0 +1,3089 @@
+[
+  {
+    "kanji": "名前",
+    "furi": "なまえ",
+    "meaning": "nama",
+    "index": 1,
+    "level": 1
+  },
+  {
+    "kanji": "国",
+    "furi": "くに",
+    "meaning": "negara",
+    "index": 2,
+    "level": 1
+  },
+  {
+    "kanji": "私",
+    "furi": "わたし",
+    "meaning": "saya",
+    "index": 3,
+    "level": 1
+  },
+  {
+    "kanji": "父",
+    "furi": "ちち",
+    "meaning": "ayah",
+    "index": 4,
+    "level": 1
+  },
+  {
+    "kanji": "母",
+    "furi": "はは",
+    "meaning": "ibu",
+    "index": 5,
+    "level": 1
+  },
+  {
+    "kanji": "子供",
+    "furi": "ともだち",
+    "meaning": "teman",
+    "index": 6,
+    "level": 1
+  },
+  {
+    "kanji": "日本",
+    "furi": "にほん",
+    "meaning": "jepang",
+    "index": 7,
+    "level": 1
+  },
+  {
+    "kanji": "水",
+    "furi": "みず",
+    "meaning": "air",
+    "index": 8,
+    "level": 1
+  },
+  {
+    "kanji": "食べます",
+    "furi": "たべます",
+    "meaning": "makan",
+    "index": 9,
+    "level": 1
+  },
+  {
+    "kanji": "飲みます",
+    "furi": "のみます",
+    "meaning": "minum",
+    "index": 10,
+    "level": 1
+  },
+  {
+    "kanji": "魚",
+    "furi": "さかな",
+    "meaning": "ikan",
+    "index": 11,
+    "level": 1
+  },
+  {
+    "kanji": "肉",
+    "furi": "にく",
+    "meaning": "daging",
+    "index": 12,
+    "level": 1
+  },
+  {
+    "kanji": "好き",
+    "furi": "すき",
+    "meaning": "suka",
+    "index": 13,
+    "level": 1
+  },
+  {
+    "kanji": "家",
+    "furi": "いえ",
+    "meaning": "rumah",
+    "index": 14,
+    "level": 1
+  },
+  {
+    "kanji": "新しい",
+    "furi": "あたらしい",
+    "meaning": "baru",
+    "index": 15,
+    "level": 1
+  },
+  {
+    "kanji": "広い",
+    "furi": "ひろい",
+    "meaning": "luas",
+    "index": 16,
+    "level": 1
+  },
+  {
+    "kanji": "古い",
+    "furi": "ふるい",
+    "meaning": "lama",
+    "index": 17,
+    "level": 1
+  },
+  {
+    "kanji": "上",
+    "furi": "うえ",
+    "meaning": "atas",
+    "index": 18,
+    "level": 1
+  },
+  {
+    "kanji": "下",
+    "furi": "した",
+    "meaning": "bawah",
+    "index": 19,
+    "level": 1
+  },
+  {
+    "kanji": "中",
+    "furi": "なか",
+    "meaning": "dalam",
+    "index": 20,
+    "level": 1
+  },
+  {
+    "kanji": "月曜日",
+    "furi": "げつようび",
+    "meaning": "senin",
+    "index": 21,
+    "level": 1
+  },
+  {
+    "kanji": "火曜日",
+    "furi": "かようび",
+    "meaning": "selasa",
+    "index": 22,
+    "level": 1
+  },
+  {
+    "kanji": "水曜日",
+    "furi": "すいようび",
+    "meaning": "rabu",
+    "index": 23,
+    "level": 1
+  },
+  {
+    "kanji": "木曜日",
+    "furi": "むくようび",
+    "meaning": "kamis",
+    "index": 24,
+    "level": 1
+  },
+  {
+    "kanji": "金曜日",
+    "furi": "きんようび",
+    "meaning": "jumat",
+    "index": 25,
+    "level": 1
+  },
+  {
+    "kanji": "土曜日",
+    "furi": "どようび",
+    "meaning": "sabtu",
+    "index": 26,
+    "level": 1
+  },
+  {
+    "kanji": "日曜日",
+    "furi": "にちようび",
+    "meaning": "minggu",
+    "index": 27,
+    "level": 1
+  },
+  {
+    "kanji": "朝",
+    "furi": "あさ",
+    "meaning": "pagi",
+    "index": 28,
+    "level": 1
+  },
+  {
+    "kanji": "昼",
+    "furi": "ひる",
+    "meaning": "siang",
+    "index": 29,
+    "level": 1
+  },
+  {
+    "kanji": "夜",
+    "furi": "よる",
+    "meaning": "malam",
+    "index": 30,
+    "level": 1
+  },
+  {
+    "kanji": "時",
+    "furi": "じ",
+    "meaning": "jam",
+    "index": 31,
+    "level": 1
+  },
+  {
+    "kanji": "分",
+    "furi": "ふん",
+    "meaning": "menit",
+    "index": 32,
+    "level": 1
+  },
+  {
+    "kanji": "半",
+    "furi": "はん",
+    "meaning": "setengah",
+    "index": 33,
+    "level": 1
+  },
+  {
+    "kanji": "枚",
+    "furi": "まい",
+    "meaning": "lembar",
+    "index": 34,
+    "level": 1
+  },
+  {
+    "kanji": "読みます",
+    "furi": "よみます",
+    "meaning": "membaca",
+    "index": 35,
+    "level": 1
+  },
+  {
+    "kanji": "聞きます",
+    "furi": "ききます",
+    "meaning": "mendengar",
+    "index": 36,
+    "level": 1
+  },
+  {
+    "kanji": "見ます",
+    "furi": "みます",
+    "meaning": "melihat",
+    "index": 37,
+    "level": 1
+  },
+  {
+    "kanji": "本",
+    "furi": "ほん",
+    "meaning": "buku",
+    "index": 38,
+    "level": 1
+  },
+  {
+    "kanji": "友達",
+    "furi": "ともだち",
+    "meaning": "teman",
+    "index": 39,
+    "level": 1
+  },
+  {
+    "kanji": "何",
+    "furi": "なに",
+    "meaning": "apa",
+    "index": 40,
+    "level": 1
+  },
+  {
+    "kanji": "年",
+    "furi": "ねん",
+    "meaning": "tahun",
+    "index": 41,
+    "level": 1
+  },
+  {
+    "kanji": "今日",
+    "furi": "きょう",
+    "meaning": "hari ini",
+    "index": 42,
+    "level": 1
+  },
+  {
+    "kanji": "今週",
+    "furi": "こんしゅう",
+    "meaning": "minggu ini",
+    "index": 43,
+    "level": 1
+  },
+  {
+    "kanji": "今度",
+    "furi": "こんど",
+    "meaning": "lain kali",
+    "index": 44,
+    "level": 1
+  },
+  {
+    "kanji": "東",
+    "furi": "ひがし",
+    "meaning": "timur",
+    "index": 45,
+    "level": 1
+  },
+  {
+    "kanji": "南",
+    "furi": "みなみ",
+    "meaning": "selatan",
+    "index": 46,
+    "level": 1
+  },
+  {
+    "kanji": "会社",
+    "furi": "かいしゃ",
+    "meaning": "perusahaan",
+    "index": 47,
+    "level": 1
+  },
+  {
+    "kanji": "来ます",
+    "furi": "きます",
+    "meaning": "datang",
+    "index": 48,
+    "level": 1
+  },
+  {
+    "kanji": "行きます",
+    "furi": "いきます",
+    "meaning": "pergi",
+    "index": 49,
+    "level": 1
+  },
+  {
+    "kanji": "乗ります",
+    "furi": "のります",
+    "meaning": "naik",
+    "index": 50,
+    "level": 1
+  },
+  {
+    "kanji": "乗ります",
+    "furi": "のります",
+    "meaning": "naik",
+    "index": 51,
+    "level": 2
+  },
+  {
+    "kanji": "大きい",
+    "furi": "おおき",
+    "meaning": "besar",
+    "index": 52,
+    "level": 2
+  },
+  {
+    "kanji": "小さい",
+    "furi": "ちいさい",
+    "meaning": "kecil",
+    "index": 53,
+    "level": 2
+  },
+  {
+    "kanji": "高い",
+    "furi": "たかい",
+    "meaning": "tinggi",
+    "index": 54,
+    "level": 2
+  },
+  {
+    "kanji": "低い",
+    "furi": "ひくい",
+    "meaning": "rendah",
+    "index": 55,
+    "level": 2
+  },
+  {
+    "kanji": "前",
+    "furi": "まえ",
+    "meaning": "depan",
+    "index": 56,
+    "level": 2
+  },
+  {
+    "kanji": "後ろ",
+    "furi": "うしろ",
+    "meaning": "belakang",
+    "index": 57,
+    "level": 2
+  },
+  {
+    "kanji": "横",
+    "furi": "よこ",
+    "meaning": "samping",
+    "index": 58,
+    "level": 2
+  },
+  {
+    "kanji": "入口",
+    "furi": "いりぐち",
+    "meaning": "pintu masuk",
+    "index": 59,
+    "level": 2
+  },
+  {
+    "kanji": "出口",
+    "furi": "でぐち",
+    "meaning": "pintu keluar",
+    "index": 60,
+    "level": 2
+  },
+  {
+    "kanji": "～階",
+    "furi": "～かい",
+    "meaning": "lantai",
+    "index": 61,
+    "level": 2
+  },
+  {
+    "kanji": "押す",
+    "furi": "おす",
+    "meaning": "mendorong",
+    "index": 62,
+    "level": 2
+  },
+  {
+    "kanji": "引く",
+    "furi": "ひくい",
+    "meaning": "menarik",
+    "index": 63,
+    "level": 2
+  },
+  {
+    "kanji": "安い",
+    "furi": "やすい",
+    "meaning": "murah",
+    "index": 64,
+    "level": 2
+  },
+  {
+    "kanji": "一",
+    "furi": "いち",
+    "meaning": "satu",
+    "index": 65,
+    "level": 2
+  },
+  {
+    "kanji": "ニ",
+    "furi": "に",
+    "meaning": "dua",
+    "index": 66,
+    "level": 2
+  },
+  {
+    "kanji": "三",
+    "furi": "さん",
+    "meaning": "tiga",
+    "index": 67,
+    "level": 2
+  },
+  {
+    "kanji": "四",
+    "furi": "よん",
+    "meaning": "empat",
+    "index": 68,
+    "level": 2
+  },
+  {
+    "kanji": "五",
+    "furi": "ご",
+    "meaning": "lima",
+    "index": 69,
+    "level": 2
+  },
+  {
+    "kanji": "六",
+    "furi": "ろく",
+    "meaning": "enam",
+    "index": 70,
+    "level": 2
+  },
+  {
+    "kanji": "七",
+    "furi": "なな",
+    "meaning": "tujuh",
+    "index": 71,
+    "level": 2
+  },
+  {
+    "kanji": "八",
+    "furi": "はち",
+    "meaning": "delapan",
+    "index": 72,
+    "level": 2
+  },
+  {
+    "kanji": "九",
+    "furi": "きゅう",
+    "meaning": "sembilan",
+    "index": 73,
+    "level": 2
+  },
+  {
+    "kanji": "十",
+    "furi": "じゅう",
+    "meaning": "sepuluh",
+    "index": 74,
+    "level": 2
+  },
+  {
+    "kanji": "百",
+    "furi": "ひゃく",
+    "meaning": "seratus",
+    "index": 75,
+    "level": 2
+  },
+  {
+    "kanji": "万",
+    "furi": "まん",
+    "meaning": "sepuluh ribu",
+    "index": 76,
+    "level": 2
+  },
+  {
+    "kanji": "千",
+    "furi": "せん",
+    "meaning": "seribu",
+    "index": 77,
+    "level": 2
+  },
+  {
+    "kanji": "休み",
+    "furi": "やすみ",
+    "meaning": "libur",
+    "index": 78,
+    "level": 2
+  },
+  {
+    "kanji": "映画",
+    "furi": "えいが",
+    "meaning": "film",
+    "index": 79,
+    "level": 2
+  },
+  {
+    "kanji": "日本語",
+    "furi": "にほんご",
+    "meaning": "bahasa jepang",
+    "index": 80,
+    "level": 2
+  },
+  {
+    "kanji": "勉強します",
+    "furi": "べんきょうします",
+    "meaning": "belajar",
+    "index": 81,
+    "level": 2
+  },
+  {
+    "kanji": "買います",
+    "furi": "かいます",
+    "meaning": "membeli",
+    "index": 82,
+    "level": 2
+  },
+  {
+    "kanji": "温泉",
+    "furi": "おんせん",
+    "meaning": "sumber air panas",
+    "index": 83,
+    "level": 2
+  },
+  {
+    "kanji": "予定",
+    "furi": "よてい",
+    "meaning": "jadwal/rencana",
+    "index": 84,
+    "level": 2
+  },
+  {
+    "kanji": "来週",
+    "furi": "らいしゅう",
+    "meaning": "minggu depan",
+    "index": 85,
+    "level": 2
+  },
+  {
+    "kanji": "会います",
+    "furi": "あいます",
+    "meaning": "bertemu",
+    "index": 86,
+    "level": 2
+  },
+  {
+    "kanji": "入ります",
+    "furi": "はいります",
+    "meaning": "masuk",
+    "index": 87,
+    "level": 2
+  },
+  {
+    "kanji": "旅行します",
+    "furi": "りょこうします",
+    "meaning": "wisata",
+    "index": 88,
+    "level": 2
+  },
+  {
+    "kanji": "学生",
+    "furi": "がくせい",
+    "meaning": "siswa",
+    "index": 89,
+    "level": 2
+  },
+  {
+    "kanji": "学校",
+    "furi": "がっこう",
+    "meaning": "sekolah",
+    "index": 90,
+    "level": 2
+  },
+  {
+    "kanji": "生活",
+    "furi": "せいかつ",
+    "meaning": "kehidupan",
+    "index": 91,
+    "level": 2
+  },
+  {
+    "kanji": "去年",
+    "furi": "きょねん",
+    "meaning": "tahun lalu",
+    "index": 92,
+    "level": 2
+  },
+  {
+    "kanji": "先週",
+    "furi": "せんしゅう",
+    "meaning": "minggu lalu",
+    "index": 93,
+    "level": 2
+  },
+  {
+    "kanji": "仕事",
+    "furi": "しごと",
+    "meaning": "bekerja",
+    "index": 94,
+    "level": 2
+  },
+  {
+    "kanji": "元気",
+    "furi": "げんき",
+    "meaning": "sehat",
+    "index": 95,
+    "level": 2
+  },
+  {
+    "kanji": "忙しい",
+    "furi": "いそがしい",
+    "meaning": "sibuk",
+    "index": 96,
+    "level": 2
+  },
+  {
+    "kanji": "働く",
+    "furi": "はたらく",
+    "meaning": "bekerja",
+    "index": 97,
+    "level": 2
+  },
+  {
+    "kanji": "作る",
+    "furi": "つくる",
+    "meaning": "membuat",
+    "index": 98,
+    "level": 2
+  },
+  {
+    "kanji": "先月",
+    "furi": "せんげつ",
+    "meaning": "bulan lalu",
+    "index": 99,
+    "level": 2
+  },
+  {
+    "kanji": "人",
+    "furi": "ひと",
+    "meaning": "orang",
+    "index": 100,
+    "level": 2
+  },
+  {
+    "kanji": "～人",
+    "furi": "～にん",
+    "meaning": "～jumlah orang",
+    "index": 101,
+    "level": 3
+  },
+  {
+    "kanji": "人",
+    "furi": "じん",
+    "meaning": "orang",
+    "index": 102,
+    "level": 3
+  },
+  {
+    "kanji": "犬",
+    "furi": "いぬ",
+    "meaning": "anjing",
+    "index": 103,
+    "level": 3
+  },
+  {
+    "kanji": "夕方",
+    "furi": "ゆうがた",
+    "meaning": "sore",
+    "index": 104,
+    "level": 3
+  },
+  {
+    "kanji": "家族",
+    "furi": "かぞく",
+    "meaning": "keluarga",
+    "index": 105,
+    "level": 3
+  },
+  {
+    "kanji": "英語",
+    "furi": "えいご",
+    "meaning": "bahasa inggris",
+    "index": 106,
+    "level": 3
+  },
+  {
+    "kanji": "音楽",
+    "furi": "おんがく",
+    "meaning": "lagu",
+    "index": 107,
+    "level": 3
+  },
+  {
+    "kanji": "習う",
+    "furi": "ならう",
+    "meaning": "belajar",
+    "index": 108,
+    "level": 3
+  },
+  {
+    "kanji": "話す",
+    "furi": "はなす",
+    "meaning": "berbicara",
+    "index": 109,
+    "level": 3
+  },
+  {
+    "kanji": "出かける",
+    "furi": "でかける",
+    "meaning": "keluar rumah",
+    "index": 110,
+    "level": 3
+  },
+  {
+    "kanji": "季節",
+    "furi": "きせつ",
+    "meaning": "musim",
+    "index": 111,
+    "level": 3
+  },
+  {
+    "kanji": "熱い",
+    "furi": "あつい",
+    "meaning": "panas",
+    "index": 112,
+    "level": 3
+  },
+  {
+    "kanji": "夏",
+    "furi": "なつ",
+    "meaning": "musim panas",
+    "index": 113,
+    "level": 3
+  },
+  {
+    "kanji": "花",
+    "furi": "はな",
+    "meaning": "bunga",
+    "index": 114,
+    "level": 3
+  },
+  {
+    "kanji": "春",
+    "furi": "はる",
+    "meaning": "musim semi",
+    "index": 115,
+    "level": 3
+  },
+  {
+    "kanji": "同じ",
+    "furi": "おなじ",
+    "meaning": "sama",
+    "index": 116,
+    "level": 3
+  },
+  {
+    "kanji": "秋",
+    "furi": "あき",
+    "meaning": "musim gugur",
+    "index": 117,
+    "level": 3
+  },
+  {
+    "kanji": "冬",
+    "furi": "ふゆ",
+    "meaning": "musim dingin",
+    "index": 118,
+    "level": 3
+  },
+  {
+    "kanji": "寒い",
+    "furi": "さむい",
+    "meaning": "dingin",
+    "index": 119,
+    "level": 3
+  },
+  {
+    "kanji": "天気",
+    "furi": "てんき",
+    "meaning": "cuaca",
+    "index": 120,
+    "level": 3
+  },
+  {
+    "kanji": "今",
+    "furi": "いま",
+    "meaning": "sekarang",
+    "index": 121,
+    "level": 3
+  },
+  {
+    "kanji": "晴れ",
+    "furi": "はれ",
+    "meaning": "cerah",
+    "index": 122,
+    "level": 3
+  },
+  {
+    "kanji": "昨日",
+    "furi": "きのう",
+    "meaning": "kemaren",
+    "index": 123,
+    "level": 3
+  },
+  {
+    "kanji": "雨",
+    "furi": "あめ",
+    "meaning": "hujan",
+    "index": 124,
+    "level": 3
+  },
+  {
+    "kanji": "明日",
+    "furi": "あした",
+    "meaning": "besuk",
+    "index": 125,
+    "level": 3
+  },
+  {
+    "kanji": "雪",
+    "furi": "ゆき",
+    "meaning": "salju",
+    "index": 126,
+    "level": 3
+  },
+  {
+    "kanji": "毎日",
+    "furi": "まいにち",
+    "meaning": "setiap hari",
+    "index": 127,
+    "level": 3
+  },
+  {
+    "kanji": "強い",
+    "furi": "つよい",
+    "meaning": "kuat",
+    "index": 128,
+    "level": 3
+  },
+  {
+    "kanji": "風",
+    "furi": "かぜ",
+    "meaning": "angin",
+    "index": 129,
+    "level": 3
+  },
+  {
+    "kanji": "町",
+    "furi": "まち",
+    "meaning": "kota",
+    "index": 130,
+    "level": 3
+  },
+  {
+    "kanji": "店",
+    "furi": "みせ",
+    "meaning": "toko",
+    "index": 131,
+    "level": 3
+  },
+  {
+    "kanji": "食堂",
+    "furi": "しょくどう",
+    "meaning": "ruang makan",
+    "index": 132,
+    "level": 3
+  },
+  {
+    "kanji": "便利",
+    "furi": "べんり",
+    "meaning": "praktis",
+    "index": 133,
+    "level": 3
+  },
+  {
+    "kanji": "不便",
+    "furi": "ふべん",
+    "meaning": "ke tidakpraktisan",
+    "index": 134,
+    "level": 3
+  },
+  {
+    "kanji": "静か",
+    "furi": "しずか",
+    "meaning": "tenang",
+    "index": 135,
+    "level": 3
+  },
+  {
+    "kanji": "有名",
+    "furi": "ゆうめい",
+    "meaning": "terkenal",
+    "index": 136,
+    "level": 3
+  },
+  {
+    "kanji": "多い",
+    "furi": "おおい",
+    "meaning": "banyak",
+    "index": 137,
+    "level": 3
+  },
+  {
+    "kanji": "少ない",
+    "furi": "すくない",
+    "meaning": "sedikit",
+    "index": 138,
+    "level": 3
+  },
+  {
+    "kanji": "遠い",
+    "furi": "とおい",
+    "meaning": "jauh",
+    "index": 139,
+    "level": 3
+  },
+  {
+    "kanji": "道",
+    "furi": "みち",
+    "meaning": "jalan",
+    "index": 140,
+    "level": 3
+  },
+  {
+    "kanji": "公園",
+    "furi": "こうえん",
+    "meaning": "taman",
+    "index": 141,
+    "level": 3
+  },
+  {
+    "kanji": "銀行",
+    "furi": "ぎんこう",
+    "meaning": "bank",
+    "index": 142,
+    "level": 3
+  },
+  {
+    "kanji": "お寺",
+    "furi": "おてら",
+    "meaning": "kuil budha",
+    "index": 143,
+    "level": 3
+  },
+  {
+    "kanji": "神社",
+    "furi": "じんじゃ",
+    "meaning": "kuil shinto",
+    "index": 144,
+    "level": 3
+  },
+  {
+    "kanji": "右",
+    "furi": "みぎ",
+    "meaning": "kanan",
+    "index": 145,
+    "level": 3
+  },
+  {
+    "kanji": "左",
+    "furi": "ひだり",
+    "meaning": "kiri",
+    "index": 146,
+    "level": 3
+  },
+  {
+    "kanji": "近く",
+    "furi": "ちかく",
+    "meaning": "dekat",
+    "index": 147,
+    "level": 3
+  },
+  {
+    "kanji": "車",
+    "furi": "くるま",
+    "meaning": "mobil",
+    "index": 148,
+    "level": 3
+  },
+  {
+    "kanji": "送る",
+    "furi": "おくる",
+    "meaning": "mengirim",
+    "index": 149,
+    "level": 3
+  },
+  {
+    "kanji": "時間",
+    "furi": "じかん",
+    "meaning": "periode jam",
+    "index": 150,
+    "level": 3
+  },
+  {
+    "kanji": "場所",
+    "furi": "ばしょ",
+    "meaning": "tempat",
+    "index": 151,
+    "level": 4
+  },
+  {
+    "kanji": "駅",
+    "furi": "えき",
+    "meaning": "stasiun",
+    "index": 152,
+    "level": 4
+  },
+  {
+    "kanji": "受付",
+    "furi": "うけつけ",
+    "meaning": "resepsionis",
+    "index": 153,
+    "level": 4
+  },
+  {
+    "kanji": "門",
+    "furi": "もん",
+    "meaning": "gerbang",
+    "index": 154,
+    "level": 4
+  },
+  {
+    "kanji": "電車",
+    "furi": "でんしゃ",
+    "meaning": "kereta",
+    "index": 155,
+    "level": 4
+  },
+  {
+    "kanji": "待つ",
+    "furi": "まつ",
+    "meaning": "menunggu",
+    "index": 156,
+    "level": 4
+  },
+  {
+    "kanji": "止まる",
+    "furi": "とまる",
+    "meaning": "berhenti",
+    "index": 157,
+    "level": 4
+  },
+  {
+    "kanji": "着く",
+    "furi": "つく",
+    "meaning": "tiba",
+    "index": 158,
+    "level": 4
+  },
+  {
+    "kanji": "急ぐ",
+    "furi": "いそぐ",
+    "meaning": "buru buru",
+    "index": 159,
+    "level": 4
+  },
+  {
+    "kanji": "お金",
+    "furi": "おかね",
+    "meaning": "uang",
+    "index": 160,
+    "level": 4
+  },
+  {
+    "kanji": "食事",
+    "furi": "しょくじ",
+    "meaning": "makan",
+    "index": 161,
+    "level": 4
+  },
+  {
+    "kanji": "～店",
+    "furi": "～てん",
+    "meaning": "toko/tempat usaha",
+    "index": 162,
+    "level": 4
+  },
+  {
+    "kanji": "博物館",
+    "furi": "はくぶつかん",
+    "meaning": "museum",
+    "index": 163,
+    "level": 4
+  },
+  {
+    "kanji": "動物園",
+    "furi": "どうぶつえん",
+    "meaning": "kebun binatang",
+    "index": 164,
+    "level": 4
+  },
+  {
+    "kanji": "試合",
+    "furi": "しあい",
+    "meaning": "pertandingan",
+    "index": 165,
+    "level": 4
+  },
+  {
+    "kanji": "楽しい",
+    "furi": "たのしい",
+    "meaning": "menyenangkan",
+    "index": 166,
+    "level": 4
+  },
+  {
+    "kanji": "難しい",
+    "furi": "むずかしい",
+    "meaning": "susah",
+    "index": 167,
+    "level": 4
+  },
+  {
+    "kanji": "登る",
+    "furi": "のぼる",
+    "meaning": "mendaki/naik",
+    "index": 168,
+    "level": 4
+  },
+  {
+    "kanji": "高校",
+    "furi": "こうこう",
+    "meaning": "SMA",
+    "index": 169,
+    "level": 4
+  },
+  {
+    "kanji": "大学",
+    "furi": "だいがく",
+    "meaning": "universitas",
+    "index": 170,
+    "level": 4
+  },
+  {
+    "kanji": "練習",
+    "furi": "れんしゅ",
+    "meaning": "latihan",
+    "index": 171,
+    "level": 4
+  },
+  {
+    "kanji": "漢字",
+    "furi": "かんじ",
+    "meaning": "kanji",
+    "index": 172,
+    "level": 4
+  },
+  {
+    "kanji": "無料",
+    "furi": "むりょう",
+    "meaning": "gratis",
+    "index": 173,
+    "level": 4
+  },
+  {
+    "kanji": "言う",
+    "furi": "いう",
+    "meaning": "mengatakan",
+    "index": 174,
+    "level": 4
+  },
+  {
+    "kanji": "書く",
+    "furi": "かく",
+    "meaning": "menulis",
+    "index": 175,
+    "level": 4
+  },
+  {
+    "kanji": "貸す",
+    "furi": "かす",
+    "meaning": "meminjamkan",
+    "index": 176,
+    "level": 4
+  },
+  {
+    "kanji": "教える",
+    "furi": "おしえる",
+    "meaning": "mengajar",
+    "index": 177,
+    "level": 4
+  },
+  {
+    "kanji": "説明する",
+    "furi": "せつめいする",
+    "meaning": "menjelaskan",
+    "index": 178,
+    "level": 4
+  },
+  {
+    "kanji": "午前",
+    "furi": "ごぜん",
+    "meaning": "pagi AM",
+    "index": 179,
+    "level": 4
+  },
+  {
+    "kanji": "午後",
+    "furi": "ごご",
+    "meaning": "sore PM",
+    "index": 180,
+    "level": 4
+  },
+  {
+    "kanji": "教科書",
+    "furi": "きょうかしょ",
+    "meaning": "buku pelajaran",
+    "index": 181,
+    "level": 4
+  },
+  {
+    "kanji": "教室",
+    "furi": "きょうしつ",
+    "meaning": "kelas",
+    "index": 182,
+    "level": 4
+  },
+  {
+    "kanji": "先生",
+    "furi": "せんせい",
+    "meaning": "guru",
+    "index": 183,
+    "level": 4
+  },
+  {
+    "kanji": "全部",
+    "furi": "ぜんぶ",
+    "meaning": "semua",
+    "index": 184,
+    "level": 4
+  },
+  {
+    "kanji": "～回",
+    "furi": "～かい",
+    "meaning": "~ kali",
+    "index": 185,
+    "level": 4
+  },
+  {
+    "kanji": "参加する",
+    "furi": "さんかする",
+    "meaning": "mengikuti",
+    "index": 186,
+    "level": 4
+  },
+  {
+    "kanji": "用意する",
+    "furi": "よういする",
+    "meaning": "persiapan",
+    "index": 187,
+    "level": 4
+  },
+  {
+    "kanji": "飲み物",
+    "furi": "のみもの",
+    "meaning": "minuman",
+    "index": 188,
+    "level": 4
+  },
+  {
+    "kanji": "お茶",
+    "furi": "おちゃ",
+    "meaning": "teh",
+    "index": 189,
+    "level": 4
+  },
+  {
+    "kanji": "お酒",
+    "furi": "おさけ",
+    "meaning": "minuman keras",
+    "index": 190,
+    "level": 4
+  },
+  {
+    "kanji": "材料",
+    "furi": "ざいりょう",
+    "meaning": "bahan",
+    "index": 191,
+    "level": 4
+  },
+  {
+    "kanji": "野菜",
+    "furi": "やさい",
+    "meaning": "sayur",
+    "index": 192,
+    "level": 4
+  },
+  {
+    "kanji": "牛肉",
+    "furi": "ぎゅうにく",
+    "meaning": "daging sapi",
+    "index": 193,
+    "level": 4
+  },
+  {
+    "kanji": "皿",
+    "furi": "さら",
+    "meaning": "piring",
+    "index": 194,
+    "level": 4
+  },
+  {
+    "kanji": "売る",
+    "furi": "うる",
+    "meaning": "menjual",
+    "index": 195,
+    "level": 4
+  },
+  {
+    "kanji": "持っていく",
+    "furi": "もっていく",
+    "meaning": "membawa pergi",
+    "index": 196,
+    "level": 4
+  },
+  {
+    "kanji": "卵",
+    "furi": "たまご",
+    "meaning": "telur",
+    "index": 197,
+    "level": 4
+  },
+  {
+    "kanji": "料理",
+    "furi": "りょうり",
+    "meaning": "masakan",
+    "index": 198,
+    "level": 4
+  },
+  {
+    "kanji": "お湯",
+    "furi": "おゆ",
+    "meaning": "air panas",
+    "index": 199,
+    "level": 4
+  },
+  {
+    "kanji": "調理方法",
+    "furi": "ちょうりほうほう",
+    "meaning": "cara masak",
+    "index": 200,
+    "level": 4
+  },
+  {
+    "kanji": "少し",
+    "furi": "すこし",
+    "meaning": "sedikit",
+    "index": 201,
+    "level": 5
+  },
+  {
+    "kanji": "味",
+    "furi": "あじ",
+    "meaning": "rasa",
+    "index": 202,
+    "level": 5
+  },
+  {
+    "kanji": "甘い",
+    "furi": "あまい",
+    "meaning": "manis",
+    "index": 203,
+    "level": 5
+  },
+  {
+    "kanji": "辛い",
+    "furi": "からい",
+    "meaning": "pedas",
+    "index": 204,
+    "level": 5
+  },
+  {
+    "kanji": "苦手",
+    "furi": "にがて",
+    "meaning": "lemah",
+    "index": 205,
+    "level": 5
+  },
+  {
+    "kanji": "コピー機",
+    "furi": "コピーき",
+    "meaning": "mesin foto kopi",
+    "index": 206,
+    "level": 5
+  },
+  {
+    "kanji": "数字",
+    "furi": "すうじ",
+    "meaning": "angka",
+    "index": 207,
+    "level": 5
+  },
+  {
+    "kanji": "電気",
+    "furi": "でんき",
+    "meaning": "listrik",
+    "index": 208,
+    "level": 5
+  },
+  {
+    "kanji": "音",
+    "furi": "おと",
+    "meaning": "suara",
+    "index": 209,
+    "level": 5
+  },
+  {
+    "kanji": "机",
+    "furi": "つくえ",
+    "meaning": "meja",
+    "index": 210,
+    "level": 5
+  },
+  {
+    "kanji": "都合",
+    "furi": "つごう",
+    "meaning": "keadaan/kondisi",
+    "index": 211,
+    "level": 5
+  },
+  {
+    "kanji": "悪い",
+    "furi": "わるい",
+    "meaning": "jelek",
+    "index": 212,
+    "level": 5
+  },
+  {
+    "kanji": "動く",
+    "furi": "うごく",
+    "meaning": "bergerak",
+    "index": 213,
+    "level": 5
+  },
+  {
+    "kanji": "使う",
+    "furi": "つかう",
+    "meaning": "menggunakan",
+    "index": 214,
+    "level": 5
+  },
+  {
+    "kanji": "終る",
+    "furi": "おわる",
+    "meaning": "selesai",
+    "index": 215,
+    "level": 5
+  },
+  {
+    "kanji": "用事",
+    "furi": "ようじ",
+    "meaning": "keperluan/janji",
+    "index": 216,
+    "level": 5
+  },
+  {
+    "kanji": "氏名",
+    "furi": "しめい",
+    "meaning": "nama",
+    "index": 217,
+    "level": 5
+  },
+  {
+    "kanji": "理由",
+    "furi": "りゆう",
+    "meaning": "alasan",
+    "index": 218,
+    "level": 5
+  },
+  {
+    "kanji": "連絡先",
+    "furi": "れんらくさき",
+    "meaning": "alamat kontak",
+    "index": 219,
+    "level": 5
+  },
+  {
+    "kanji": "別に",
+    "furi": "べつに",
+    "meaning": "khususnya",
+    "index": 220,
+    "level": 5
+  },
+  {
+    "kanji": "早く",
+    "furi": "はやく",
+    "meaning": "cepat",
+    "index": 221,
+    "level": 5
+  },
+  {
+    "kanji": "吸う",
+    "furi": "すう",
+    "meaning": "merokok/menghirup",
+    "index": 222,
+    "level": 5
+  },
+  {
+    "kanji": "取る",
+    "furi": "とる",
+    "meaning": "mengambil",
+    "index": 223,
+    "level": 5
+  },
+  {
+    "kanji": "帰る",
+    "furi": "かえる",
+    "meaning": "pulang",
+    "index": 224,
+    "level": 5
+  },
+  {
+    "kanji": "伝える",
+    "furi": "つたえる",
+    "meaning": "memberi tau",
+    "index": 225,
+    "level": 5
+  },
+  {
+    "kanji": "熱",
+    "furi": "ねつ",
+    "meaning": "panas",
+    "index": 226,
+    "level": 5
+  },
+  {
+    "kanji": "薬",
+    "furi": "くすり",
+    "meaning": "obat",
+    "index": 227,
+    "level": 5
+  },
+  {
+    "kanji": "病気",
+    "furi": "びょうき",
+    "meaning": "sakit",
+    "index": 228,
+    "level": 5
+  },
+  {
+    "kanji": "病院",
+    "furi": "びょういん",
+    "meaning": "rumah sakit",
+    "index": 229,
+    "level": 5
+  },
+  {
+    "kanji": "医者",
+    "furi": "いしゃ",
+    "meaning": "dokter",
+    "index": 230,
+    "level": 5
+  },
+  {
+    "kanji": "住所",
+    "furi": "じゅうしょ",
+    "meaning": "alamat",
+    "index": 231,
+    "level": 5
+  },
+  {
+    "kanji": "～才",
+    "furi": "～さい",
+    "meaning": "umur",
+    "index": 232,
+    "level": 5
+  },
+  {
+    "kanji": "痛い",
+    "furi": "いたい",
+    "meaning": "sakit",
+    "index": 233,
+    "level": 5
+  },
+  {
+    "kanji": "眠い",
+    "furi": "ねむい",
+    "meaning": "ngantuk",
+    "index": 234,
+    "level": 5
+  },
+  {
+    "kanji": "寝る",
+    "furi": "ねる",
+    "meaning": "tidur",
+    "index": 235,
+    "level": 5
+  },
+  {
+    "kanji": "記入する",
+    "furi": "きにゅうする",
+    "meaning": "mencatat/mengisi",
+    "index": 236,
+    "level": 5
+  },
+  {
+    "kanji": "体",
+    "furi": "からだ",
+    "meaning": "badan",
+    "index": 237,
+    "level": 5
+  },
+  {
+    "kanji": "顔",
+    "furi": "かお",
+    "meaning": "wajah",
+    "index": 238,
+    "level": 5
+  },
+  {
+    "kanji": "目",
+    "furi": "め",
+    "meaning": "mata",
+    "index": 239,
+    "level": 5
+  },
+  {
+    "kanji": "耳",
+    "furi": "みみ",
+    "meaning": "telinga",
+    "index": 240,
+    "level": 5
+  },
+  {
+    "kanji": "口",
+    "furi": "くち",
+    "meaning": "mulut",
+    "index": 241,
+    "level": 5
+  },
+  {
+    "kanji": "頭",
+    "furi": "あたま",
+    "meaning": "kepala",
+    "index": 242,
+    "level": 5
+  },
+  {
+    "kanji": "足",
+    "furi": "あし",
+    "meaning": "kaki",
+    "index": 243,
+    "level": 5
+  },
+  {
+    "kanji": "手",
+    "furi": "て",
+    "meaning": "tangan",
+    "index": 244,
+    "level": 5
+  },
+  {
+    "kanji": "胸",
+    "furi": "むね",
+    "meaning": "dada",
+    "index": 245,
+    "level": 5
+  },
+  {
+    "kanji": "起きる",
+    "furi": "おきる",
+    "meaning": "bangun",
+    "index": 246,
+    "level": 5
+  },
+  {
+    "kanji": "歩く",
+    "furi": "あるく",
+    "meaning": "berjalan",
+    "index": 247,
+    "level": 5
+  },
+  {
+    "kanji": "走る",
+    "furi": "はしる",
+    "meaning": "berlari",
+    "index": 248,
+    "level": 5
+  },
+  {
+    "kanji": "運動する",
+    "furi": "うんどうする",
+    "meaning": "olahraga",
+    "index": 249,
+    "level": 5
+  },
+  {
+    "kanji": "お父さん",
+    "furi": "おとうさん",
+    "meaning": "ayah orang lain",
+    "index": 250,
+    "level": 5
+  },
+  {
+    "kanji": "お母さん",
+    "furi": "おかあさん",
+    "meaning": "ibu orang lain",
+    "index": 251,
+    "level": 6
+  },
+  {
+    "kanji": "兄",
+    "furi": "あに",
+    "meaning": "kakak laki laki",
+    "index": 252,
+    "level": 6
+  },
+  {
+    "kanji": "お兄さん",
+    "furi": "おにいさん",
+    "meaning": "kakak laki laki orang lain",
+    "index": 253,
+    "level": 6
+  },
+  {
+    "kanji": "姉",
+    "furi": "あね",
+    "meaning": "kaka perempuan",
+    "index": 254,
+    "level": 6
+  },
+  {
+    "kanji": "お姉さん",
+    "furi": "おねえさん",
+    "meaning": "kakak perempuan orang lain",
+    "index": 255,
+    "level": 6
+  },
+  {
+    "kanji": "弟",
+    "furi": "おとうと",
+    "meaning": "adik laki laki",
+    "index": 256,
+    "level": 6
+  },
+  {
+    "kanji": "妹",
+    "furi": "いもうと",
+    "meaning": "adik perempuan",
+    "index": 257,
+    "level": 6
+  },
+  {
+    "kanji": "夫",
+    "furi": "おっと",
+    "meaning": "suami",
+    "index": 258,
+    "level": 6
+  },
+  {
+    "kanji": "妻",
+    "furi": "つま",
+    "meaning": "istri",
+    "index": 259,
+    "level": 6
+  },
+  {
+    "kanji": "男の子",
+    "furi": "おとこのこ",
+    "meaning": "laki laki",
+    "index": 260,
+    "level": 6
+  },
+  {
+    "kanji": "女の子",
+    "furi": "おんなのこ",
+    "meaning": "perempuan",
+    "index": 261,
+    "level": 6
+  },
+  {
+    "kanji": "お祝い",
+    "furi": "おいわい",
+    "meaning": "perayaan",
+    "index": 262,
+    "level": 6
+  },
+  {
+    "kanji": "誕生日",
+    "furi": "たんじょうび",
+    "meaning": "ulangtahun",
+    "index": 263,
+    "level": 6
+  },
+  {
+    "kanji": "結婚",
+    "furi": "けっこん",
+    "meaning": "menikah",
+    "index": 264,
+    "level": 6
+  },
+  {
+    "kanji": "時計",
+    "furi": "とけい",
+    "meaning": "jam",
+    "index": 265,
+    "level": 6
+  },
+  {
+    "kanji": "幸せ",
+    "furi": "しあわせ",
+    "meaning": "gembira",
+    "index": 266,
+    "level": 6
+  },
+  {
+    "kanji": "生まれる",
+    "furi": "うまれる",
+    "meaning": "lahir",
+    "index": 267,
+    "level": 6
+  },
+  {
+    "kanji": "思う",
+    "furi": "おもう",
+    "meaning": "berpikir",
+    "index": 268,
+    "level": 6
+  },
+  {
+    "kanji": "選ぶ",
+    "furi": "えらぶ",
+    "meaning": "memilih",
+    "index": 269,
+    "level": 6
+  },
+  {
+    "kanji": "合格する",
+    "furi": "ごうかくする",
+    "meaning": "lulus",
+    "index": 270,
+    "level": 6
+  },
+  {
+    "kanji": "山",
+    "furi": "やま",
+    "meaning": "gunung",
+    "index": 271,
+    "level": 6
+  },
+  {
+    "kanji": "川",
+    "furi": "かわ",
+    "meaning": "sungai",
+    "index": 272,
+    "level": 6
+  },
+  {
+    "kanji": "海",
+    "furi": "うみ",
+    "meaning": "laut",
+    "index": 273,
+    "level": 6
+  },
+  {
+    "kanji": "島",
+    "furi": "しま",
+    "meaning": "pulau",
+    "index": 274,
+    "level": 6
+  },
+  {
+    "kanji": "森",
+    "furi": "もり",
+    "meaning": "hutan",
+    "index": 275,
+    "level": 6
+  },
+  {
+    "kanji": "客",
+    "furi": "きゃく",
+    "meaning": "tamu",
+    "index": 276,
+    "level": 6
+  },
+  {
+    "kanji": "観光地",
+    "furi": "かんこうち",
+    "meaning": "tempat wisata",
+    "index": 277,
+    "level": 6
+  },
+  {
+    "kanji": "意味",
+    "furi": "いみ",
+    "meaning": "arti",
+    "index": 278,
+    "level": 6
+  },
+  {
+    "kanji": "経験",
+    "furi": "けいけん",
+    "meaning": "pengalaman",
+    "index": 279,
+    "level": 6
+  },
+  {
+    "kanji": "写真",
+    "furi": "しゃしん",
+    "meaning": "foto",
+    "index": 280,
+    "level": 6
+  },
+  {
+    "kanji": "歌",
+    "furi": "うた",
+    "meaning": "lagu",
+    "index": 281,
+    "level": 6
+  },
+  {
+    "kanji": "歌手",
+    "furi": "かしゅ",
+    "meaning": "penyanyi",
+    "index": 282,
+    "level": 6
+  },
+  {
+    "kanji": "上手",
+    "furi": "じょうず",
+    "meaning": "pintar",
+    "index": 283,
+    "level": 6
+  },
+  {
+    "kanji": "明るい",
+    "furi": "あかるい",
+    "meaning": "terang/ceria",
+    "index": 284,
+    "level": 6
+  },
+  {
+    "kanji": "長い",
+    "furi": "ながい",
+    "meaning": "panjang",
+    "index": 285,
+    "level": 6
+  },
+  {
+    "kanji": "短い",
+    "furi": "みじかい",
+    "meaning": "pendek",
+    "index": 286,
+    "level": 6
+  },
+  {
+    "kanji": "着る",
+    "furi": "きる",
+    "meaning": "memakai",
+    "index": 287,
+    "level": 6
+  },
+  {
+    "kanji": "立つ",
+    "furi": "たつ",
+    "meaning": "berdiri",
+    "index": 288,
+    "level": 6
+  },
+  {
+    "kanji": "泣く",
+    "furi": "なく",
+    "meaning": "menangis",
+    "index": 289,
+    "level": 6
+  },
+  {
+    "kanji": "注文",
+    "furi": "ちゅうもん",
+    "meaning": "memesan",
+    "index": 290,
+    "level": 6
+  },
+  {
+    "kanji": "会計",
+    "furi": "かいけい",
+    "meaning": "perhitungan",
+    "index": 291,
+    "level": 6
+  },
+  {
+    "kanji": "予約",
+    "furi": "よやく",
+    "meaning": "janji/reservasi",
+    "index": 292,
+    "level": 6
+  },
+  {
+    "kanji": "電話番号",
+    "furi": "でんわばんごう",
+    "meaning": "No. telfon",
+    "index": 293,
+    "level": 6
+  },
+  {
+    "kanji": "ご飯",
+    "furi": "ごはん",
+    "meaning": "nasi",
+    "index": 294,
+    "level": 6
+  },
+  {
+    "kanji": "塩",
+    "furi": "しお",
+    "meaning": "garam",
+    "index": 295,
+    "level": 6
+  },
+  {
+    "kanji": "油",
+    "furi": "あぶら",
+    "meaning": "minyak",
+    "index": 296,
+    "level": 6
+  },
+  {
+    "kanji": "～方",
+    "furi": "～かた",
+    "meaning": "arah/cara",
+    "index": 297,
+    "level": 6
+  },
+  {
+    "kanji": "量",
+    "furi": "りょう",
+    "meaning": "jumlah",
+    "index": 298,
+    "level": 6
+  },
+  {
+    "kanji": "～屋",
+    "furi": "～や",
+    "meaning": "toko",
+    "index": 299,
+    "level": 6
+  },
+  {
+    "kanji": "満足",
+    "furi": "まんぞく",
+    "meaning": "kepuasan",
+    "index": 300,
+    "level": 6
+  },
+  {
+    "kanji": "切る",
+    "furi": "きる",
+    "meaning": "memotong",
+    "index": 301,
+    "level": 7
+  },
+  {
+    "kanji": "焼く",
+    "furi": "やく",
+    "meaning": "memanggang",
+    "index": 302,
+    "level": 7
+  },
+  {
+    "kanji": "入れる",
+    "furi": "いれる",
+    "meaning": "memasukkan",
+    "index": 303,
+    "level": 7
+  },
+  {
+    "kanji": "自然",
+    "furi": "しぜん",
+    "meaning": "alam",
+    "index": 304,
+    "level": 7
+  },
+  {
+    "kanji": "交通",
+    "furi": "こうつう",
+    "meaning": "lalu lintas",
+    "index": 305,
+    "level": 7
+  },
+  {
+    "kanji": "船",
+    "furi": "ふね",
+    "meaning": "kapal",
+    "index": 306,
+    "level": 7
+  },
+  {
+    "kanji": "自転車",
+    "furi": "じてんしゃ",
+    "meaning": "sepeda",
+    "index": 307,
+    "level": 7
+  },
+  {
+    "kanji": "旅館",
+    "furi": "りょかん",
+    "meaning": "penginapan",
+    "index": 308,
+    "level": 7
+  },
+  {
+    "kanji": "東京",
+    "furi": "とうきょう",
+    "meaning": "tokyo",
+    "index": 309,
+    "level": 7
+  },
+  {
+    "kanji": "計画",
+    "furi": "けいかく",
+    "meaning": "rencana",
+    "index": 310,
+    "level": 7
+  },
+  {
+    "kanji": "遊ぶ",
+    "furi": "あそぶ",
+    "meaning": "bermain",
+    "index": 311,
+    "level": 7
+  },
+  {
+    "kanji": "調べる",
+    "furi": "しらべる",
+    "meaning": "mencari",
+    "index": 312,
+    "level": 7
+  },
+  {
+    "kanji": "出発する",
+    "furi": "しゅっぱつする",
+    "meaning": "berangkat",
+    "index": 313,
+    "level": 7
+  },
+  {
+    "kanji": "運転",
+    "furi": "うんてん",
+    "meaning": "menyetir",
+    "index": 314,
+    "level": 7
+  },
+  {
+    "kanji": "事故",
+    "furi": "じこ",
+    "meaning": "kecelakaan",
+    "index": 315,
+    "level": 7
+  },
+  {
+    "kanji": "故障",
+    "furi": "こしょう",
+    "meaning": "rusak",
+    "index": 316,
+    "level": 7
+  },
+  {
+    "kanji": "指定席",
+    "furi": "していせき",
+    "meaning": "tempat duduk yg di pesan",
+    "index": 317,
+    "level": 7
+  },
+  {
+    "kanji": "週末",
+    "furi": "しゅうまつ",
+    "meaning": "akhir pekan",
+    "index": 318,
+    "level": 7
+  },
+  {
+    "kanji": "絵",
+    "furi": "え",
+    "meaning": "gambar",
+    "index": 319,
+    "level": 7
+  },
+  {
+    "kanji": "空",
+    "furi": "そら",
+    "meaning": "langit",
+    "index": 320,
+    "level": 7
+  },
+  {
+    "kanji": "泳ぐ",
+    "furi": "およぐ",
+    "meaning": "berenang",
+    "index": 321,
+    "level": 7
+  },
+  {
+    "kanji": "光る",
+    "furi": "ひかる",
+    "meaning": "bersinar",
+    "index": 322,
+    "level": 7
+  },
+  {
+    "kanji": "到着する",
+    "furi": "とうちゃくする",
+    "meaning": "tiba",
+    "index": 323,
+    "level": 7
+  },
+  {
+    "kanji": "お知らせ",
+    "furi": "おしらせ",
+    "meaning": "pemberitahuan",
+    "index": 324,
+    "level": 7
+  },
+  {
+    "kanji": "今月",
+    "furi": "こんげつ",
+    "meaning": "bulan ini",
+    "index": 325,
+    "level": 7
+  },
+  {
+    "kanji": "水道",
+    "furi": "すいど",
+    "meaning": "kran air /PDAM",
+    "index": 326,
+    "level": 7
+  },
+  {
+    "kanji": "工事",
+    "furi": "こうじ",
+    "meaning": "ada kerjaan kontruksi",
+    "index": 327,
+    "level": 7
+  },
+  {
+    "kanji": "広場",
+    "furi": "ひろば",
+    "meaning": "alun alun/ruang terbuka",
+    "index": 328,
+    "level": 7
+  },
+  {
+    "kanji": "場合",
+    "furi": "ばあい",
+    "meaning": "situasinya/kalau",
+    "index": 329,
+    "level": 7
+  },
+  {
+    "kanji": "中止",
+    "furi": "ちゅうし",
+    "meaning": "penangguhan/cancel",
+    "index": 330,
+    "level": 7
+  },
+  {
+    "kanji": "条件",
+    "furi": "じょうけん",
+    "meaning": "kondisi",
+    "index": 331,
+    "level": 7
+  },
+  {
+    "kanji": "以上",
+    "furi": "いじょう",
+    "meaning": "lebih dari",
+    "index": 332,
+    "level": 7
+  },
+  {
+    "kanji": "開く",
+    "furi": "ひらく",
+    "meaning": "membuka",
+    "index": 333,
+    "level": 7
+  },
+  {
+    "kanji": "生産する",
+    "furi": "せいさんする",
+    "meaning": "produksi",
+    "index": 334,
+    "level": 7
+  },
+  {
+    "kanji": "来年",
+    "furi": "らいねん",
+    "meaning": "tahun depan",
+    "index": 335,
+    "level": 7
+  },
+  {
+    "kanji": "会場",
+    "furi": "かいじょう",
+    "meaning": "aula pertemuan",
+    "index": 336,
+    "level": 7
+  },
+  {
+    "kanji": "世界",
+    "furi": "せかい",
+    "meaning": "dunia",
+    "index": 337,
+    "level": 7
+  },
+  {
+    "kanji": "体験",
+    "furi": "たいけん",
+    "meaning": "pengalaman",
+    "index": 338,
+    "level": 7
+  },
+  {
+    "kanji": "国際交流",
+    "furi": "こくさいこうりゅう",
+    "meaning": "pertukaran internasional",
+    "index": 339,
+    "level": 7
+  },
+  {
+    "kanji": "禁止",
+    "furi": "きんし",
+    "meaning": "larangan",
+    "index": 340,
+    "level": 7
+  },
+  {
+    "kanji": "紙",
+    "furi": "かみ",
+    "meaning": "kertas",
+    "index": 341,
+    "level": 7
+  },
+  {
+    "kanji": "始まる",
+    "furi": "はじまる",
+    "meaning": "mulai",
+    "index": 342,
+    "level": 7
+  },
+  {
+    "kanji": "申し込む",
+    "furi": "もうしこむ",
+    "meaning": "formulir permohonan",
+    "index": 343,
+    "level": 7
+  },
+  {
+    "kanji": "今年",
+    "furi": "ことし",
+    "meaning": "tahun ini",
+    "index": 344,
+    "level": 7
+  },
+  {
+    "kanji": "昨年",
+    "furi": "さくねん",
+    "meaning": "tahun lalu",
+    "index": 345,
+    "level": 7
+  },
+  {
+    "kanji": "毎年",
+    "furi": "まいとし",
+    "meaning": "setiap tahun",
+    "index": 346,
+    "level": 7
+  },
+  {
+    "kanji": "文化",
+    "furi": "ぶんか",
+    "meaning": "kebudayaan",
+    "index": 347,
+    "level": 7
+  },
+  {
+    "kanji": "祭り",
+    "furi": "まつり",
+    "meaning": "festifal",
+    "index": 348,
+    "level": 7
+  },
+  {
+    "kanji": "正月",
+    "furi": "しょうがつ",
+    "meaning": "tahun baru",
+    "index": 349,
+    "level": 7
+  },
+  {
+    "kanji": "～式",
+    "furi": "～しき",
+    "meaning": "perayaan",
+    "index": 350,
+    "level": 7
+  },
+  {
+    "kanji": "大人",
+    "furi": "おとな",
+    "meaning": "dewasa",
+    "index": 351,
+    "level": 8
+  },
+  {
+    "kanji": "米",
+    "furi": "こめ",
+    "meaning": "beras",
+    "index": 352,
+    "level": 8
+  },
+  {
+    "kanji": "特別",
+    "furi": "とくべつ",
+    "meaning": "spesial",
+    "index": 353,
+    "level": 8
+  },
+  {
+    "kanji": "服",
+    "furi": "ふく",
+    "meaning": "baju",
+    "index": 354,
+    "level": 8
+  },
+  {
+    "kanji": "袋",
+    "furi": "ふくろ",
+    "meaning": "kantong",
+    "index": 355,
+    "level": 8
+  },
+  {
+    "kanji": "店長",
+    "furi": "てんちょう",
+    "meaning": "manajer",
+    "index": 356,
+    "level": 8
+  },
+  {
+    "kanji": "全員",
+    "furi": "ぜんいん",
+    "meaning": "semua",
+    "index": 357,
+    "level": 8
+  },
+  {
+    "kanji": "習慣",
+    "furi": "しゅうかん",
+    "meaning": "kebiasaan",
+    "index": 358,
+    "level": 8
+  },
+  {
+    "kanji": "普通",
+    "furi": "ふつう",
+    "meaning": "biasa",
+    "index": 359,
+    "level": 8
+  },
+  {
+    "kanji": "暗い",
+    "furi": "くらい",
+    "meaning": "gelap",
+    "index": 360,
+    "level": 8
+  },
+  {
+    "kanji": "怒る",
+    "furi": "おこる",
+    "meaning": "marah",
+    "index": 361,
+    "level": 8
+  },
+  {
+    "kanji": "入院する",
+    "furi": "にゅういんする",
+    "meaning": "masuk rumah sakit",
+    "index": 362,
+    "level": 8
+  },
+  {
+    "kanji": "色",
+    "furi": "いろ",
+    "meaning": "warna",
+    "index": 363,
+    "level": 8
+  },
+  {
+    "kanji": "赤い",
+    "furi": "あかい",
+    "meaning": "merah",
+    "index": 364,
+    "level": 8
+  },
+  {
+    "kanji": "青い",
+    "furi": "あおい",
+    "meaning": "biru",
+    "index": 365,
+    "level": 8
+  },
+  {
+    "kanji": "黒い",
+    "furi": "くろい",
+    "meaning": "hitam",
+    "index": 366,
+    "level": 8
+  },
+  {
+    "kanji": "白い",
+    "furi": "しろい",
+    "meaning": "putih",
+    "index": 367,
+    "level": 8
+  },
+  {
+    "kanji": "女性",
+    "furi": "じょうせい",
+    "meaning": "wanita",
+    "index": 368,
+    "level": 8
+  },
+  {
+    "kanji": "男性",
+    "furi": "だんせい",
+    "meaning": "pria",
+    "index": 369,
+    "level": 8
+  },
+  {
+    "kanji": "急に",
+    "furi": "きゅうに",
+    "meaning": "tiba tiba",
+    "index": 370,
+    "level": 8
+  },
+  {
+    "kanji": "営業する",
+    "furi": "えいぎょうする",
+    "meaning": "menjual",
+    "index": 371,
+    "level": 8
+  },
+  {
+    "kanji": "案内する",
+    "furi": "あんないする",
+    "meaning": "memandu",
+    "index": 372,
+    "level": 8
+  },
+  {
+    "kanji": "商品",
+    "furi": "しょうひん",
+    "meaning": "komoditas/barang dagangan",
+    "index": 373,
+    "level": 8
+  },
+  {
+    "kanji": "値段",
+    "furi": "ねだん",
+    "meaning": "harga",
+    "index": 374,
+    "level": 8
+  },
+  {
+    "kanji": "価格",
+    "furi": "かかく",
+    "meaning": "harga/nilai",
+    "index": 375,
+    "level": 8
+  },
+  {
+    "kanji": "消費税",
+    "furi": "しょうひぜい",
+    "meaning": "pajak konsumsi",
+    "index": 376,
+    "level": 8
+  },
+  {
+    "kanji": "税別",
+    "furi": "ぜいべつ",
+    "meaning": "tidak termasuk pajak",
+    "index": 377,
+    "level": 8
+  },
+  {
+    "kanji": "店員",
+    "furi": "てんいん",
+    "meaning": "penjaga toko",
+    "index": 378,
+    "level": 8
+  },
+  {
+    "kanji": "親切",
+    "furi": "しんせつ",
+    "meaning": "ramah",
+    "index": 379,
+    "level": 8
+  },
+  {
+    "kanji": "重い",
+    "furi": "おもい",
+    "meaning": "berat",
+    "index": 380,
+    "level": 8
+  },
+  {
+    "kanji": "軽い",
+    "furi": "かるい",
+    "meaning": "ringan",
+    "index": 381,
+    "level": 8
+  },
+  {
+    "kanji": "変わる",
+    "furi": "かわる",
+    "meaning": "mengganti",
+    "index": 382,
+    "level": 8
+  },
+  {
+    "kanji": "市",
+    "furi": "し",
+    "meaning": "kota",
+    "index": 383,
+    "level": 8
+  },
+  {
+    "kanji": "料金",
+    "furi": "りょうきん",
+    "meaning": "biaya",
+    "index": 384,
+    "level": 8
+  },
+  {
+    "kanji": "図書館",
+    "furi": "としょかん",
+    "meaning": "perpustakaan",
+    "index": 385,
+    "level": 8
+  },
+  {
+    "kanji": "道具",
+    "furi": "どうぐ",
+    "meaning": "alat",
+    "index": 386,
+    "level": 8
+  },
+  {
+    "kanji": "必要",
+    "furi": "ひつよう",
+    "meaning": "penting",
+    "index": 387,
+    "level": 8
+  },
+  {
+    "kanji": "借りる",
+    "furi": "かりる",
+    "meaning": "meminjam",
+    "index": 388,
+    "level": 8
+  },
+  {
+    "kanji": "返す",
+    "furi": "かえす",
+    "meaning": "mengembalikan",
+    "index": 389,
+    "level": 8
+  },
+  {
+    "kanji": "開く",
+    "furi": "あく",
+    "meaning": "membuka",
+    "index": 390,
+    "level": 8
+  },
+  {
+    "kanji": "閉まる",
+    "furi": "しまる",
+    "meaning": "menutup",
+    "index": 391,
+    "level": 8
+  },
+  {
+    "kanji": "利用する",
+    "furi": "りようする",
+    "meaning": "menggunakan",
+    "index": 392,
+    "level": 8
+  },
+  {
+    "kanji": "外国",
+    "furi": "がいこく",
+    "meaning": "luar negri",
+    "index": 393,
+    "level": 8
+  },
+  {
+    "kanji": "情報",
+    "furi": "じょうほう",
+    "meaning": "informasi",
+    "index": 394,
+    "level": 8
+  },
+  {
+    "kanji": "相談",
+    "furi": "そうだん",
+    "meaning": "diskusi/konsultasi",
+    "index": 395,
+    "level": 8
+  },
+  {
+    "kanji": "質問",
+    "furi": "しつもん",
+    "meaning": "pertanyaan",
+    "index": 396,
+    "level": 8
+  },
+  {
+    "kanji": "窓口",
+    "furi": "まどぐち",
+    "meaning": "loket masuk /tiket",
+    "index": 397,
+    "level": 8
+  },
+  {
+    "kanji": "郵便局",
+    "furi": "ゆうびんきょく",
+    "meaning": "kantor pos",
+    "index": 398,
+    "level": 8
+  },
+  {
+    "kanji": "近所",
+    "furi": "きんじょ",
+    "meaning": "tetangga",
+    "index": 399,
+    "level": 8
+  },
+  {
+    "kanji": "自動",
+    "furi": "じどう",
+    "meaning": "otomatis",
+    "index": 400,
+    "level": 8
+  },
+  {
+    "kanji": "洗う",
+    "furi": "あらう",
+    "meaning": "mencuci",
+    "index": 401,
+    "level": 9
+  },
+  {
+    "kanji": "入力する",
+    "furi": "にゅうりょくする",
+    "meaning": "menginput/entri data",
+    "index": 402,
+    "level": 9
+  },
+  {
+    "kanji": "温度",
+    "furi": "おんど",
+    "meaning": "suhu",
+    "index": 403,
+    "level": 9
+  },
+  {
+    "kanji": "危険",
+    "furi": "きけん",
+    "meaning": "bahaya",
+    "index": 404,
+    "level": 9
+  },
+  {
+    "kanji": "種類",
+    "furi": "しゅるい",
+    "meaning": "jenis",
+    "index": 405,
+    "level": 9
+  },
+  {
+    "kanji": "消す",
+    "furi": "けす",
+    "meaning": "menghapus",
+    "index": 406,
+    "level": 9
+  },
+  {
+    "kanji": "捨てる",
+    "furi": "すてる",
+    "meaning": "membuang",
+    "index": 407,
+    "level": 9
+  },
+  {
+    "kanji": "出す",
+    "furi": "だす",
+    "meaning": "mengeluarkan",
+    "index": 408,
+    "level": 9
+  },
+  {
+    "kanji": "分ける",
+    "furi": "わける",
+    "meaning": "membagi",
+    "index": 409,
+    "level": 9
+  },
+  {
+    "kanji": "燃える",
+    "furi": "もえる",
+    "meaning": "terbakar",
+    "index": 410,
+    "level": 9
+  },
+  {
+    "kanji": "決める",
+    "furi": "きめる",
+    "meaning": "memutuskan",
+    "index": 411,
+    "level": 9
+  },
+  {
+    "kanji": "設定する",
+    "furi": "せっていする",
+    "meaning": "mengatur",
+    "index": 412,
+    "level": 9
+  },
+  {
+    "kanji": "地震",
+    "furi": "じしん",
+    "meaning": "gempa",
+    "index": 413,
+    "level": 9
+  },
+  {
+    "kanji": "台風",
+    "furi": "たいふう",
+    "meaning": "angin topan",
+    "index": 414,
+    "level": 9
+  },
+  {
+    "kanji": "外",
+    "furi": "そと",
+    "meaning": "luar",
+    "index": 415,
+    "level": 9
+  },
+  {
+    "kanji": "声",
+    "furi": "こえ",
+    "meaning": "suara",
+    "index": 416,
+    "level": 9
+  },
+  {
+    "kanji": "危ない",
+    "furi": "あぶない",
+    "meaning": "bahaya",
+    "index": 417,
+    "level": 9
+  },
+  {
+    "kanji": "大切",
+    "furi": "たいせつ",
+    "meaning": "penting",
+    "index": 418,
+    "level": 9
+  },
+  {
+    "kanji": "心配",
+    "furi": "しんぱい",
+    "meaning": "kawatir",
+    "index": 419,
+    "level": 9
+  },
+  {
+    "kanji": "集まる",
+    "furi": "あつまる",
+    "meaning": "berkumpul",
+    "index": 420,
+    "level": 9
+  },
+  {
+    "kanji": "進む",
+    "furi": "すすむ",
+    "meaning": "untuk maju",
+    "index": 421,
+    "level": 9
+  },
+  {
+    "kanji": "最近",
+    "furi": "さいきん",
+    "meaning": "akhir akhir ini",
+    "index": 422,
+    "level": 9
+  },
+  {
+    "kanji": "授業",
+    "furi": "じゅぎょう",
+    "meaning": "pelajaran",
+    "index": 423,
+    "level": 9
+  },
+  {
+    "kanji": "問題",
+    "furi": "もんだい",
+    "meaning": "masalah",
+    "index": 424,
+    "level": 9
+  },
+  {
+    "kanji": "大変",
+    "furi": "たいへん",
+    "meaning": "berat",
+    "index": 425,
+    "level": 9
+  },
+  {
+    "kanji": "困る",
+    "furi": "こまる",
+    "meaning": "susah",
+    "index": 426,
+    "level": 9
+  },
+  {
+    "kanji": "違う",
+    "furi": "ちがう",
+    "meaning": "salah",
+    "index": 427,
+    "level": 9
+  },
+  {
+    "kanji": "慣れる",
+    "furi": "なれる",
+    "meaning": "terbiasa",
+    "index": 428,
+    "level": 9
+  },
+  {
+    "kanji": "増える",
+    "furi": "ふえる",
+    "meaning": "bertambah",
+    "index": 429,
+    "level": 9
+  },
+  {
+    "kanji": "笑う",
+    "furi": "わらう",
+    "meaning": "tertawa",
+    "index": 430,
+    "level": 9
+  },
+  {
+    "kanji": "苦労する",
+    "furi": "くろうする",
+    "meaning": "kesulitan",
+    "index": 431,
+    "level": 9
+  },
+  {
+    "kanji": "希望",
+    "furi": "きぼう",
+    "meaning": "keinginan",
+    "index": 432,
+    "level": 9
+  },
+  {
+    "kanji": "募集",
+    "furi": "ぼしゅう",
+    "meaning": "perekrutan",
+    "index": 433,
+    "level": 9
+  },
+  {
+    "kanji": "特に",
+    "furi": "とくに",
+    "meaning": "khususnya",
+    "index": 434,
+    "level": 9
+  },
+  {
+    "kanji": "住む",
+    "furi": "すむ",
+    "meaning": "tinggal",
+    "index": 435,
+    "level": 9
+  },
+  {
+    "kanji": "立てる",
+    "furi": "たてる",
+    "meaning": "berdiri",
+    "index": 436,
+    "level": 9
+  },
+  {
+    "kanji": "続ける",
+    "furi": "つづける",
+    "meaning": "melanjutkan",
+    "index": 437,
+    "level": 9
+  },
+  {
+    "kanji": "考える",
+    "furi": "かんがえる",
+    "meaning": "berpikir",
+    "index": 438,
+    "level": 9
+  },
+  {
+    "kanji": "役に立つ",
+    "furi": "やくにたつ",
+    "meaning": "berguna",
+    "index": 439,
+    "level": 9
+  },
+  {
+    "kanji": "卒業する",
+    "furi": "そつぎょうする",
+    "meaning": "lulus",
+    "index": 440,
+    "level": 9
+  },
+  {
+    "kanji": "留学する",
+    "furi": "りゅうがくする",
+    "meaning": "belajar di luar negri",
+    "index": 441,
+    "level": 9
+  }
+]
