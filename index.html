@@ -83,7 +83,7 @@
 
     <div class="footer">
       <div id="levelInfo">Level —</div>
-      <div>Exam status: <span id="examStatus">stopped</span></div>
+      <div>Exam status: <span id="examStatus">stopped</span> | <span id="countdown" style="margin-left:8px;font-weight:bold;"></span></div>
     </div>
   </div>
 </div>
@@ -160,14 +160,28 @@ function flip(){ card.classList.toggle('is-flipped'); }
 
 function shuffle(){ if(!filtered.length) return; for(let i=filtered.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[filtered[i],filtered[j]]=[filtered[j],filtered[i]];} idx=0; render(); }
 
-// Exam mode
+
+let remaining = 0;
 function startExamMode(){
   const sec = Math.max(1, parseInt(intervalInput.value||10,10));
+  remaining = sec;
+  document.getElementById('countdown').textContent = remaining + 's';
   stopExamMode();
   examStatus.textContent='running';
-  examTimer = setInterval(()=>{ next(); }, sec*1000);
+  examTimer = setInterval(()=>{
+    remaining--;
+    if(remaining<=0){
+      next();
+      remaining = sec;
+    }
+    document.getElementById('countdown').textContent = remaining + 's';
+  }, 1000);
 }
-function stopExamMode(){ if(examTimer){ clearInterval(examTimer); examTimer=null; examStatus.textContent='stopped'; } }
+function stopExamMode(){
+  if(examTimer){ clearInterval(examTimer); examTimer=null; }
+  examStatus.textContent='stopped';
+  document.getElementById('countdown').textContent = '';
+}
 
 // Events
 levelSelect.addEventListener('change', applyFilter);
