@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Flashcard Kanji - 441 Kata</title>
+  <title>Belajar Bahasa Jepang - 441 Kanji</title>
   <style>
     :root {
       --w: 480px;
@@ -53,11 +53,274 @@
       transition: background 0.3s;
     }
 
+    .page {
+      display: none;
+      width: 100%;
+      max-width: 1200px;
+      animation: fadeIn 0.5s;
+    }
+
+    .page.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Welcome Screen */
+    .welcome-container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .welcome-title {
+      font-size: clamp(32px, 6vw, 56px);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0 0 20px 0;
+      line-height: 1.2;
+    }
+
+    .welcome-subtitle {
+      font-size: clamp(16px, 3vw, 22px);
+      color: var(--text-secondary);
+      margin: 0 0 40px 0;
+    }
+
+    .welcome-emoji {
+      font-size: clamp(80px, 15vw, 120px);
+      margin: 30px 0;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .btn-primary {
+      padding: 18px 48px;
+      font-size: 20px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ec4899, #db2777);
+      color: white;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      box-shadow: 0 12px 32px rgba(236,72,153,0.3);
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(236,72,153,0.4);
+    }
+
+    /* Menu Grid */
+    .menu-container {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .menu-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .menu-title {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0 0 10px 0;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .menu-card {
+      background: var(--btn-bg);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: var(--btn-shadow);
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    }
+
+    .menu-card.disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .menu-card.disabled:hover {
+      transform: none;
+    }
+
+    .menu-icon {
+      font-size: 56px;
+      margin-bottom: 16px;
+    }
+
+    .menu-card-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 8px 0;
+    }
+
+    .menu-card-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .coming-soon-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background: var(--btn-bg);
+      border: none;
+      border-radius: 12px;
+      box-shadow: var(--btn-shadow);
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      z-index: 1000;
+      transition: all 0.3s;
+    }
+
+    .back-btn:hover {
+      transform: translateX(-4px);
+    }
+
+    /* Kanji List Page */
+    .list-container {
+      width: 100%;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    .list-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .list-title {
+      font-size: clamp(24px, 4vw, 32px);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0 0 20px 0;
+    }
+
+    .level-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .level-tab {
+      padding: 10px 20px;
+      background: var(--btn-bg);
+      border: 2px solid transparent;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      transition: all 0.3s;
+    }
+
+    .level-tab:hover {
+      border-color: #ec4899;
+    }
+
+    .level-tab.active {
+      background: linear-gradient(135deg, #ec4899, #db2777);
+      color: white;
+      border-color: transparent;
+    }
+
+    .kanji-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .kanji-item {
+      background: var(--btn-bg);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: var(--btn-shadow);
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .kanji-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    }
+
+    .kanji-char {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0 0 8px 0;
+    }
+
+    .kanji-furi {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin: 0 0 4px 0;
+    }
+
+    .kanji-meaning {
+      font-size: 16px;
+      color: var(--text-primary);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Flashcard Page (existing styles) */
     header {
       width: 100%;
       max-width: 1000px;
       margin-bottom: 20px;
       text-align: center;
+      margin-top: 60px;
     }
     
     h1 {
@@ -381,17 +644,110 @@
       :root { --w: 92vw; --h: 70vw; }
       h1 { font-size: 22px; }
       .controls-panel { padding: 0 8px; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .kanji-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
     }
   </style>
 </head>
 <body data-theme="sakura" data-font="default">
+
+  <!-- Loading Screen -->
   <div id="loadingScreen" class="loading">
     ⏳ Memuat data kanji...
   </div>
 
-  <div id="mainContent" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
+  <!-- Welcome Page -->
+  <div id="welcomePage" class="page" style="display:none;">
+    <div class="welcome-container">
+      <div class="welcome-emoji">🎌</div>
+      <h1 class="welcome-title">Selamat Datang!</h1>
+      <p class="welcome-subtitle">Website Belajar Bahasa Jepang<br>441 Kanji • 9 Level • Interaktif</p>
+      <button class="btn-primary" onclick="showMenu()">🚀 Mulai Belajar</button>
+    </div>
+  </div>
+
+  <!-- Menu Page -->
+  <div id="menuPage" class="page">
+    <div class="menu-container">
+      <div class="menu-header">
+        <h1 class="menu-title">📚 Pilih Menu Belajar</h1>
+        <p style="color: var(--text-secondary); margin: 0;">Pilih metode belajar yang sesuai dengan kebutuhanmu</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Flashcard -->
+        <div class="menu-card" onclick="showFlashcard()">
+          <div class="menu-icon">🃏</div>
+          <h2 class="menu-card-title">Flashcard Kanji</h2>
+          <p class="menu-card-desc">Belajar dengan kartu interaktif + mode ujian</p>
+        </div>
+
+        <!-- Daftar Kanji -->
+        <div class="menu-card" onclick="showKanjiList()">
+          <div class="menu-icon">📋</div>
+          <h2 class="menu-card-title">Daftar Kanji</h2>
+          <p class="menu-card-desc">Lihat semua kanji berdasarkan level</p>
+        </div>
+
+        <!-- Modul Kotoba -->
+        <div class="menu-card disabled">
+          <span class="coming-soon-badge">COMING SOON</span>
+          <div class="menu-icon">📖</div>
+          <h2 class="menu-card-title">Modul Kotoba</h2>
+          <p class="menu-card-desc">Kosakata harian bahasa Jepang</p>
+        </div>
+
+        <!-- Modul Charenji -->
+        <div class="menu-card disabled">
+          <span class="coming-soon-badge">COMING SOON</span>
+          <div class="menu-icon">🎯</div>
+          <h2 class="menu-card-title">Modul Charenji</h2>
+          <p class="menu-card-desc">Tantangan & latihan intensif</p>
+        </div>
+
+        <!-- Modul Minna no Nihongo -->
+        <div class="menu-card disabled">
+          <span class="coming-soon-badge">COMING SOON</span>
+          <div class="menu-icon">📚</div>
+          <h2 class="menu-card-title">Minna no Nihongo</h2>
+          <p class="menu-card-desc">Materi lengkap per bab</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kanji List Page -->
+  <div id="kanjiListPage" class="page">
+    <button class="back-btn" onclick="showMenu()">← Kembali</button>
+    <div class="list-container">
+      <div class="list-header">
+        <h1 class="list-title">📋 Daftar Kanji per Level</h1>
+        <p style="color: var(--text-secondary); margin: 0;">Total <strong id="totalKanjiCount">441</strong> Kanji</p>
+      </div>
+
+      <div class="level-tabs" id="levelTabs">
+        <button class="level-tab active" onclick="filterKanjiList('all')">Semua Level</button>
+        <button class="level-tab" onclick="filterKanjiList(1)">Level 1</button>
+        <button class="level-tab" onclick="filterKanjiList(2)">Level 2</button>
+        <button class="level-tab" onclick="filterKanjiList(3)">Level 3</button>
+        <button class="level-tab" onclick="filterKanjiList(4)">Level 4</button>
+        <button class="level-tab" onclick="filterKanjiList(5)">Level 5</button>
+        <button class="level-tab" onclick="filterKanjiList(6)">Level 6</button>
+        <button class="level-tab" onclick="filterKanjiList(7)">Level 7</button>
+        <button class="level-tab" onclick="filterKanjiList(8)">Level 8</button>
+        <button class="level-tab" onclick="filterKanjiList(9)">Level 9</button>
+      </div>
+
+      <div class="kanji-grid" id="kanjiGrid"></div>
+    </div>
+  </div>
+
+  <!-- Flashcard Page -->
+  <div id="flashcardPage" class="page">
+    <button class="back-btn" onclick="showMenu()">← Kembali</button>
+    
     <header>
-      <h1>📚 Flashcard Kanji - 441 Kata</h1>
+      <h1>🃏 Flashcard Kanji - 441 Kata</h1>
       <p class="subtitle">Belajar Kanji dengan mudah dan menyenangkan!</p>
     </header>
 
@@ -495,10 +851,14 @@
     let quizScore = 0;
     let quizTotal = 0;
     let currentQuizQuestion = null;
+    let currentListLevel = 'all';
 
     // Elements
     const loadingScreen = document.getElementById('loadingScreen');
-    const mainContent = document.getElementById('mainContent');
+    const welcomePage = document.getElementById('welcomePage');
+    const menuPage = document.getElementById('menuPage');
+    const kanjiListPage = document.getElementById('kanjiListPage');
+    const flashcardPage = document.getElementById('flashcardPage');
     const themeSelect = document.getElementById('themeSelect');
     const fontSelect = document.getElementById('fontSelect');
     const levelFilter = document.getElementById('levelFilter');
@@ -525,6 +885,29 @@
     const quizScoreEl = document.getElementById('quizScore');
     const quizTotalEl = document.getElementById('quizTotal');
     const quizTimerEl = document.getElementById('quizTimer');
+    const kanjiGrid = document.getElementById('kanjiGrid');
+    const totalKanjiCount = document.getElementById('totalKanjiCount');
+
+    // Navigation Functions
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+
+    function showMenu() {
+      showPage('menuPage');
+      stopQuiz();
+    }
+
+    function showFlashcard() {
+      showPage('flashcardPage');
+      render();
+    }
+
+    function showKanjiList() {
+      showPage('kanjiListPage');
+      renderKanjiList('all');
+    }
 
     // Load Kanji Data from JSON
     async function loadKanjiData() {
@@ -541,8 +924,9 @@
 
         filteredCards = [...allKanjiData];
         loadingScreen.style.display = 'none';
-        mainContent.style.display = 'flex';
-        render();
+        welcomePage.style.display = 'flex';
+        welcomePage.classList.add('active');
+        totalKanjiCount.textContent = allKanjiData.length;
         console.log(`✅ Berhasil memuat ${allKanjiData.length} kanji`);
       } catch (error) {
         console.error('Error loading kanji data:', error);
@@ -561,7 +945,46 @@
       }
     }
 
-    // Render flashcard
+    // Kanji List Functions
+    function renderKanjiList(level) {
+      currentListLevel = level;
+      const filtered = level === 'all' ? allKanjiData : allKanjiData.filter(k => k.level === level);
+      
+      kanjiGrid.innerHTML = '';
+      
+      if (filtered.length === 0) {
+        kanjiGrid.innerHTML = '<p style="text-align:center; color:var(--text-secondary); grid-column: 1/-1;">Tidak ada data</p>';
+        return;
+      }
+
+      filtered.forEach(kanji => {
+        const item = document.createElement('div');
+        item.className = 'kanji-item';
+        item.innerHTML = `
+          <div class="kanji-char">${kanji.kanji}</div>
+          <div class="kanji-furi">${kanji.furi}</div>
+          <div class="kanji-meaning">${kanji.meaning}</div>
+          <div style="margin-top:8px; font-size:11px; color:var(--text-secondary); font-weight:600;">Level ${kanji.level}</div>
+        `;
+        kanjiGrid.appendChild(item);
+      });
+
+      // Update active tab
+      document.querySelectorAll('.level-tab').forEach(tab => tab.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function filterKanjiList(level) {
+      renderKanjiList(level);
+      
+      // Update tab active state
+      document.querySelectorAll('.level-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      event.target.classList.add('active');
+    }
+
+    // Flashcard Functions
     function render() {
       if (!filteredCards.length) {
         frontKanji.textContent = '—';
@@ -585,7 +1008,6 @@
       card.classList.remove('is-flipped');
     }
 
-    // Navigation
     function next() {
       if (!filteredCards.length) return;
       currentIndex = (currentIndex + 1) % filteredCards.length;
@@ -686,13 +1108,11 @@
       
       quizResult.classList.remove('show');
       
-      // Random kanji
       const randomIndex = Math.floor(Math.random() * filteredCards.length);
       currentQuizQuestion = filteredCards[randomIndex];
       
       quizKanji.textContent = currentQuizQuestion.kanji;
       
-      // Generate options
       const correctAnswer = currentQuizQuestion.meaning;
       const wrongAnswers = [];
       
@@ -763,12 +1183,14 @@
 
     // Keyboard shortcuts
     document.onkeydown = (e) => {
-      if (e.code === 'Space') {
-        e.preventDefault();
-        flip();
+      if (flashcardPage.classList.contains('active')) {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          flip();
+        }
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
       }
-      if (e.key === 'ArrowRight') next();
-      if (e.key === 'ArrowLeft') prev();
     };
 
     // Initialize
