@@ -545,6 +545,21 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: all 0.3s;
       background: var(--btn-bg);
+      opacity: 0;
+      transform: scale(0);
+      pointer-events: none;
+    }
+
+    .theme-btn.show {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: all;
+    }
+
+    .theme-btn.main {
+      opacity: 1 !important;
+      transform: scale(1) !important;
+      pointer-events: all !important;
     }
 
     .theme-btn:hover {
@@ -564,11 +579,65 @@
       box-shadow: 0 0 0 3px rgba(14,165,233,0.5);
     }
 
-    /* Additional Control Buttons */
-    .control-buttons {
+    /* Collapsible Control Panel */
+    .controls-wrapper {
+      width: 100%;
+      max-width: 1000px;
+      margin-bottom: 20px;
+    }
+
+    .controls-header {
+      background: var(--btn-bg);
+      padding: 12px 20px;
+      border-radius: 12px;
+      box-shadow: var(--btn-shadow);
+      cursor: pointer;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: all 0.3s;
+    }
+
+    .controls-header:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .controls-header-title {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
       gap: 8px;
-      margin-bottom: 10px;
+    }
+
+    .controls-toggle {
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    .controls-toggle.open {
+      transform: rotate(180deg);
+    }
+
+    .controls-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .controls-content.open {
+      max-height: 500px;
+      padding-top: 15px;
+    }
+
+    .controls-panel {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
     .icon-btn {
@@ -742,9 +811,10 @@
 </head>
 <body data-theme="sakura" data-font="default">
 
-  <!-- Floating Theme Switcher -->
-  <div class="theme-switcher" id="themeSwitcher" style="display:none;">
-    <button class="theme-btn active" data-theme="sakura" title="Tema Sakura">🌸</button>
+  <!-- Floating Theme Switcher (Always Visible) -->
+  <div class="theme-switcher" id="themeSwitcher">
+    <button class="theme-btn main" id="themeToggle" title="Ganti Tema">🎨</button>
+    <button class="theme-btn" data-theme="sakura" title="Tema Sakura">🌸</button>
     <button class="theme-btn" data-theme="dark" title="Tema Dark">🌙</button>
     <button class="theme-btn" data-theme="light" title="Tema Light">☀️</button>
   </div>
@@ -758,9 +828,9 @@
   <div id="welcomePage" class="page" style="display:none;">
     <div class="welcome-container">
       <div class="welcome-emoji">🎌</div>
-      <h1 class="welcome-title">Selamat Datang!</h1>
-      <p class="welcome-subtitle">Website Belajar Bahasa Jepang<br>441 Kanji • 9 Level • Interaktif</p>
-      <button class="btn-primary" onclick="showMenu()">🚀 Mulai Belajar</button>
+      <h1 class="welcome-title">ようこそ</h1>
+      <p class="welcome-subtitle">日本語学習サイト<br>441 漢字 • 9 レヴェル • かっこいい！• 8期生 2025</p>
+      <button class="btn-primary" onclick="showMenu()">🚀 始めましょう</button>
     </div>
   </div>
 
@@ -849,54 +919,54 @@
       <p class="subtitle">Belajar Kanji dengan mudah dan menyenangkan!</p>
     </header>
 
-    <div class="controls-panel">
-      <div class="control-group">
-        <label>Tema:</label>
-        <select id="themeSelect">
-          <option value="sakura">🌸 Sakura</option>
-          <option value="dark">🌙 Dark</option>
-          <option value="light">☀️ Light</option>
-        </select>
+    <div class="controls-wrapper">
+      <div class="controls-header" id="controlsHeader">
+        <span class="controls-header-title">
+          ⚙️ Pengaturan
+        </span>
+        <span class="controls-toggle open" id="controlsToggle">▼</span>
       </div>
+      
+      <div class="controls-content open" id="controlsContent">
+        <div class="controls-panel">
+          <div class="control-group">
+            <label>Ukuran Font:</label>
+            <select id="fontSelect">
+              <option value="default">Default</option>
+              <option value="medium">Medium</option>
+              <option value="big">Big</option>
+            </select>
+          </div>
 
-      <div class="control-group">
-        <label>Ukuran Font:</label>
-        <select id="fontSelect">
-          <option value="default">Default</option>
-          <option value="medium">Medium</option>
-          <option value="big">Big</option>
-        </select>
+          <div class="control-group">
+            <label>Filter Level:</label>
+            <select id="levelFilter">
+              <option value="all">Semua Level</option>
+              <option value="1">Level 1</option>
+              <option value="2">Level 2</option>
+              <option value="3">Level 3</option>
+              <option value="4">Level 4</option>
+              <option value="5">Level 5</option>
+              <option value="6">Level 6</option>
+              <option value="7">Level 7</option>
+              <option value="8">Level 8</option>
+              <option value="9">Level 9</option>
+            </select>
+          </div>
+
+          <div class="mode-switch">
+            <button class="mode-btn active" data-mode="normal">📖 Normal</button>
+            <button class="mode-btn" data-mode="quiz">✍️ Ujian</button>
+          </div>
+
+          <button class="icon-btn active" id="toggleLevelBtn" title="Show/Hide Level">
+            👁️ Level Badge
+          </button>
+          <button class="icon-btn" id="fullscreenBtn" title="Fullscreen">
+            ⛶ Fullscreen
+          </button>
+        </div>
       </div>
-
-      <div class="control-group">
-        <label>Filter Level:</label>
-        <select id="levelFilter">
-          <option value="all">Semua Level</option>
-          <option value="1">Level 1</option>
-          <option value="2">Level 2</option>
-          <option value="3">Level 3</option>
-          <option value="4">Level 4</option>
-          <option value="5">Level 5</option>
-          <option value="6">Level 6</option>
-          <option value="7">Level 7</option>
-          <option value="8">Level 8</option>
-          <option value="9">Level 9</option>
-        </select>
-      </div>
-
-      <div class="mode-switch">
-        <button class="mode-btn active" data-mode="normal">📖 Normal</button>
-        <button class="mode-btn" data-mode="quiz">✍️ Ujian</button>
-      </div>
-    </div>
-
-    <div class="control-buttons">
-      <button class="icon-btn active" id="toggleLevelBtn" title="Show/Hide Level">
-        👁️ Level Badge
-      </button>
-      <button class="icon-btn" id="fullscreenBtn" title="Fullscreen">
-        ⛶ Fullscreen
-      </button>
     </div>
 
     <div class="stage" id="normalMode">
@@ -928,8 +998,6 @@
 
     <div class="quiz-panel" id="quizMode">
       <div class="quiz-settings">
-        <label>Interval (detik):</label>
-        <input type="number" id="quizInterval" value="10" min="5" max="60">
         <button id="startQuizBtn">▶️ Mulai Ujian</button>
         <button id="stopQuizBtn" style="display:none;">⏸️ Stop</button>
       </div>
@@ -943,7 +1011,6 @@
 
       <div style="margin-top:20px; text-align:center; color: var(--text-primary);">
         <strong>Skor: <span id="quizScore">0</span> / <span id="quizTotal">0</span></strong>
-        <span style="margin-left:20px;">Waktu: <span id="quizTimer">0</span>s</span>
       </div>
     </div>
   </div>
@@ -953,13 +1020,12 @@
     let allKanjiData = [];
     let filteredCards = [];
     let currentIndex = 0;
-    let quizTimer = null;
-    let quizTimeElapsed = 0;
     let quizScore = 0;
     let quizTotal = 0;
     let currentQuizQuestion = null;
     let currentListLevel = 'all';
     let showLevelBadge = true;
+    let themeExpanded = false;
 
     // Elements
     const loadingScreen = document.getElementById('loadingScreen');
@@ -968,9 +1034,12 @@
     const kanjiListPage = document.getElementById('kanjiListPage');
     const flashcardPage = document.getElementById('flashcardPage');
     const themeSwitcher = document.getElementById('themeSwitcher');
-    const themeSelect = document.getElementById('themeSelect');
+    const themeToggle = document.getElementById('themeToggle');
     const fontSelect = document.getElementById('fontSelect');
     const levelFilter = document.getElementById('levelFilter');
+    const controlsHeader = document.getElementById('controlsHeader');
+    const controlsToggle = document.getElementById('controlsToggle');
+    const controlsContent = document.getElementById('controlsContent');
     const card = document.getElementById('card');
     const frontKanji = document.getElementById('frontKanji');
     const backKanji = document.getElementById('backKanji');
@@ -987,13 +1056,11 @@
     const quizMode = document.getElementById('quizMode');
     const startQuizBtn = document.getElementById('startQuizBtn');
     const stopQuizBtn = document.getElementById('stopQuizBtn');
-    const quizInterval = document.getElementById('quizInterval');
     const quizKanji = document.getElementById('quizKanji');
     const quizOptions = document.getElementById('quizOptions');
     const quizResult = document.getElementById('quizResult');
     const quizScoreEl = document.getElementById('quizScore');
     const quizTotalEl = document.getElementById('quizTotal');
-    const quizTimerEl = document.getElementById('quizTimer');
     const kanjiGrid = document.getElementById('kanjiGrid');
     const totalKanjiCount = document.getElementById('totalKanjiCount');
     const toggleLevelBtn = document.getElementById('toggleLevelBtn');
@@ -1037,41 +1104,54 @@
 
     // Load Kanji Data from JSON
     async function loadKanjiData() {
-      try {
-        const response = await fetch('kanji.json');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        allKanjiData = await response.json();
-        
-        if (!allKanjiData || allKanjiData.length === 0) {
-          throw new Error('Data kanji kosong atau format salah');
-        }
+    console.log("🔍 Memulai loadKanjiData...");
+    try {
+      const response = await fetch("kanji.json", { cache: "no-cache" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
 
-        filteredCards = [...allKanjiData];
-        loadingScreen.style.display = 'none';
-        welcomePage.style.display = 'flex';
-        welcomePage.classList.add('active');
-        totalKanjiCount.textContent = allKanjiData.length;
-        console.log(`✅ Berhasil memuat ${allKanjiData.length} kanji`);
-      } catch (error) {
-        console.error('Error loading kanji data:', error);
-        loadingScreen.innerHTML = `
-          <div class="error">
-            <h3>❌ Gagal Memuat Data Kanji</h3>
-            <p>Error: ${error.message}</p>
-            <p style="margin-top:15px; font-size:14px;">
-              <strong>Pastikan:</strong><br>
-              1. File <code>kanji.json</code> ada di folder yang sama dengan index.html<br>
-              2. Jalankan dengan local web server (bukan buka file langsung)<br>
-              3. Gunakan: <code>python -m http.server 8000</code> atau <code>php -S localhost:8000</code>
-            </p>
-          </div>
-        `;
+      const data = await response.json();
+      console.log("✅ Data JSON berhasil diambil:", data.length, "kanji");
+
+      if (!Array.isArray(data) || data.length === 0) {
+        throw new Error("Data kanji kosong atau format salah");
       }
-    }
 
-    // Kanji List Functions
+      allKanjiData = data;
+      filteredCards = [...allKanjiData];
+      totalKanjiCount.textContent = allKanjiData.length;
+
+      // Tampilkan halaman utama
+      loadingScreen.style.display = "none";
+      welcomePage.style.display = "flex";
+      welcomePage.classList.add("active");
+
+      console.log("🎉 Aplikasi siap digunakan!");
+    } catch (error) {
+      console.error("❌ Gagal memuat kanji.json:", error);
+      loadingScreen.innerHTML = `
+        <div class="error">
+          <h3>❌ Gagal Memuat Data Kanji</h3>
+          <p>Error: ${error.message}</p>
+          <p style="margin-top:15px; font-size:14px;">
+            <strong>Langkah perbaikan:</strong><br>
+            1️⃣ Pastikan file <code>kanji.json</code> ada di folder yang sama.<br>
+            2️⃣ Jalankan dengan local server (misal: <code>python -m http.server 8000</code>).<br>
+            3️⃣ Akses melalui <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>.<br>
+            4️⃣ Jika masih gagal, lihat console log (Ctrl+Shift+J).
+          </p>
+        </div>
+      `;
+
+      // Tambahkan fallback agar halaman tetap terbuka
+      welcomePage.style.display = "flex";
+      welcomePage.classList.add("active");
+    }
+  }
+
+  // Panggil fungsi saat halaman dimuat
+  document.addEventListener("DOMContentLoaded", loadKanjiData);
+
+  // Kanji List Functions
     function renderKanjiList(level) {
       currentListLevel = level;
       const filtered = level === 'all' ? allKanjiData : allKanjiData.filter(k => k.level === level);
@@ -1159,30 +1239,58 @@
     }
 
     // Theme & Font
-    themeSelect.addEventListener('change', (e) => {
-      changeTheme(e.target.value);
-    });
-
     fontSelect.addEventListener('change', (e) => {
       document.body.setAttribute('data-font', e.target.value);
     });
 
-    // Floating Theme Switcher
-    document.querySelectorAll('.theme-btn').forEach(btn => {
+    // Collapsible Controls
+    controlsHeader.addEventListener('click', () => {
+      const isOpen = controlsContent.classList.toggle('open');
+      controlsToggle.classList.toggle('open');
+    });
+
+    // Floating Theme Switcher Toggle
+    themeToggle.addEventListener('click', () => {
+      themeExpanded = !themeExpanded;
+      const themeButtons = document.querySelectorAll('.theme-btn:not(.main)');
+      
+      if (themeExpanded) {
+        themeButtons.forEach(btn => btn.classList.add('show'));
+      } else {
+        themeButtons.forEach(btn => btn.classList.remove('show'));
+      }
+    });
+
+    // Floating Theme Switcher Selection
+    document.querySelectorAll('.theme-btn[data-theme]').forEach(btn => {
       btn.addEventListener('click', () => {
         const theme = btn.dataset.theme;
         changeTheme(theme);
+        
+        // Close theme menu
+        themeExpanded = false;
+        document.querySelectorAll('.theme-btn:not(.main)').forEach(b => b.classList.remove('show'));
+        
+        // Update main button icon
+        themeToggle.textContent = btn.textContent;
       });
     });
 
     function changeTheme(theme) {
       document.body.setAttribute('data-theme', theme);
-      themeSelect.value = theme;
       
       // Update active button
-      document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.theme-btn[data-theme]').forEach(b => b.classList.remove('active'));
       document.querySelector(`.theme-btn[data-theme="${theme}"]`).classList.add('active');
     }
+
+    // Close theme menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!themeSwitcher.contains(e.target) && themeExpanded) {
+        themeExpanded = false;
+        document.querySelectorAll('.theme-btn:not(.main)').forEach(btn => btn.classList.remove('show'));
+      }
+    });
 
     // Toggle Level Badge
     toggleLevelBtn.addEventListener('click', () => {
@@ -1252,33 +1360,19 @@
       });
     });
 
-    // Quiz Mode
+        // Quiz Mode
     function startQuiz() {
       if (!filteredCards.length) return;
-      
       quizScore = 0;
       quizTotal = 0;
-      quizTimeElapsed = 0;
       quizScoreEl.textContent = '0';
       quizTotalEl.textContent = '0';
-      quizTimerEl.textContent = '0';
-      
       startQuizBtn.style.display = 'none';
       stopQuizBtn.style.display = 'inline-block';
-      
       generateQuizQuestion();
-      
-      quizTimer = setInterval(() => {
-        quizTimeElapsed++;
-        quizTimerEl.textContent = quizTimeElapsed;
-      }, 1000);
     }
 
     function stopQuiz() {
-      if (quizTimer) {
-        clearInterval(quizTimer);
-        quizTimer = null;
-      }
       startQuizBtn.style.display = 'inline-block';
       stopQuizBtn.style.display = 'none';
       quizResult.classList.remove('show');
@@ -1286,26 +1380,23 @@
 
     function generateQuizQuestion() {
       if (!filteredCards.length) return;
-      
       quizResult.classList.remove('show');
-      
+
       const randomIndex = Math.floor(Math.random() * filteredCards.length);
       currentQuizQuestion = filteredCards[randomIndex];
-      
       quizKanji.textContent = currentQuizQuestion.kanji;
-      
+
       const correctAnswer = currentQuizQuestion.meaning;
       const wrongAnswers = [];
-      
+
       while (wrongAnswers.length < 3) {
         const randomKanji = filteredCards[Math.floor(Math.random() * filteredCards.length)];
         if (randomKanji.meaning !== correctAnswer && !wrongAnswers.includes(randomKanji.meaning)) {
           wrongAnswers.push(randomKanji.meaning);
         }
       }
-      
+
       const allOptions = [correctAnswer, ...wrongAnswers].sort(() => Math.random() - 0.5);
-      
       quizOptions.innerHTML = '';
       allOptions.forEach(option => {
         const btn = document.createElement('button');
@@ -1319,18 +1410,14 @@
     function checkAnswer(selected, correct) {
       quizTotal++;
       quizTotalEl.textContent = quizTotal;
-      
+
       const buttons = quizOptions.querySelectorAll('.quiz-option');
       buttons.forEach(btn => {
         btn.disabled = true;
-        if (btn.textContent === correct) {
-          btn.classList.add('correct');
-        }
-        if (btn.textContent === selected && selected !== correct) {
-          btn.classList.add('wrong');
-        }
+        if (btn.textContent === correct) btn.classList.add('correct');
+        if (btn.textContent === selected && selected !== correct) btn.classList.add('wrong');
       });
-      
+
       if (selected === correct) {
         quizScore++;
         quizScoreEl.textContent = quizScore;
@@ -1342,15 +1429,13 @@
         quizResult.style.background = '#fee2e2';
         quizResult.style.color = '#991b1b';
       }
-      
+
       quizResult.classList.add('show');
-      
-      const interval = parseInt(quizInterval.value) * 1000;
+
+      // Auto next after 2 seconds
       setTimeout(() => {
-        if (quizTimer) {
-          generateQuizQuestion();
-        }
-      }, interval);
+        if (stopQuizBtn.style.display !== 'none') generateQuizQuestion();
+      }, 2000);
     }
 
     // Event Listeners
