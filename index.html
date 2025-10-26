@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Progress Nihonggo by BlazeM4CK ♥️</title>
+  <title>Belajar Bahasa Jepang - 441 Kanji</title>
   <style>
     :root {
       --w: 480px;
@@ -512,6 +512,97 @@
       border-radius: 20px;
       font-size: 12px;
       font-weight: 600;
+      transition: opacity 0.3s;
+    }
+
+    .level-badge.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Floating Theme Switcher */
+    .theme-switcher {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 999;
+    }
+
+    .theme-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s;
+      background: var(--btn-bg);
+    }
+
+    .theme-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .theme-btn.active {
+      box-shadow: 0 0 0 3px rgba(236,72,153,0.5);
+    }
+
+    [data-theme="dark"] .theme-btn.active {
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.5);
+    }
+
+    [data-theme="light"] .theme-btn.active {
+      box-shadow: 0 0 0 3px rgba(14,165,233,0.5);
+    }
+
+    /* Additional Control Buttons */
+    .control-buttons {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .icon-btn {
+      padding: 8px 12px;
+      background: var(--btn-bg);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+      box-shadow: var(--btn-shadow);
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .icon-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .icon-btn.active {
+      background: linear-gradient(135deg, #ec4899, #db2777);
+      color: white;
+    }
+
+    [data-theme="dark"] .icon-btn.active {
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+    }
+
+    [data-theme="light"] .icon-btn.active {
+      background: linear-gradient(135deg, #0ea5e9, #0284c7);
     }
 
     [data-font="default"] .kanji { font-size: clamp(48px, 8vw, 72px); }
@@ -651,6 +742,13 @@
 </head>
 <body data-theme="sakura" data-font="default">
 
+  <!-- Floating Theme Switcher -->
+  <div class="theme-switcher" id="themeSwitcher" style="display:none;">
+    <button class="theme-btn active" data-theme="sakura" title="Tema Sakura">🌸</button>
+    <button class="theme-btn" data-theme="dark" title="Tema Dark">🌙</button>
+    <button class="theme-btn" data-theme="light" title="Tema Light">☀️</button>
+  </div>
+
   <!-- Loading Screen -->
   <div id="loadingScreen" class="loading">
     ⏳ Memuat data kanji...
@@ -661,7 +759,7 @@
     <div class="welcome-container">
       <div class="welcome-emoji">🎌</div>
       <h1 class="welcome-title">Selamat Datang!</h1>
-      <p class="welcome-subtitle">Made by BlazeM4CK ♥️ 2025<br>441 Kanji • 9 Level • Interaktif</p>
+      <p class="welcome-subtitle">Website Belajar Bahasa Jepang<br>441 Kanji • 9 Level • Interaktif</p>
       <button class="btn-primary" onclick="showMenu()">🚀 Mulai Belajar</button>
     </div>
   </div>
@@ -792,6 +890,15 @@
       </div>
     </div>
 
+    <div class="control-buttons">
+      <button class="icon-btn active" id="toggleLevelBtn" title="Show/Hide Level">
+        👁️ Level Badge
+      </button>
+      <button class="icon-btn" id="fullscreenBtn" title="Fullscreen">
+        ⛶ Fullscreen
+      </button>
+    </div>
+
     <div class="stage" id="normalMode">
       <div class="scene">
         <div class="card" id="card">
@@ -852,6 +959,7 @@
     let quizTotal = 0;
     let currentQuizQuestion = null;
     let currentListLevel = 'all';
+    let showLevelBadge = true;
 
     // Elements
     const loadingScreen = document.getElementById('loadingScreen');
@@ -859,6 +967,7 @@
     const menuPage = document.getElementById('menuPage');
     const kanjiListPage = document.getElementById('kanjiListPage');
     const flashcardPage = document.getElementById('flashcardPage');
+    const themeSwitcher = document.getElementById('themeSwitcher');
     const themeSelect = document.getElementById('themeSelect');
     const fontSelect = document.getElementById('fontSelect');
     const levelFilter = document.getElementById('levelFilter');
@@ -887,6 +996,8 @@
     const quizTimerEl = document.getElementById('quizTimer');
     const kanjiGrid = document.getElementById('kanjiGrid');
     const totalKanjiCount = document.getElementById('totalKanjiCount');
+    const toggleLevelBtn = document.getElementById('toggleLevelBtn');
+    const fullscreenBtn = document.getElementById('fullscreenBtn');
 
     // Navigation Functions
     function showPage(pageId) {
@@ -908,16 +1019,19 @@
 
     function showMenu() {
       showPage('menuPage');
+      themeSwitcher.style.display = 'none';
       stopQuiz();
     }
 
     function showFlashcard() {
       showPage('flashcardPage');
+      themeSwitcher.style.display = 'flex';
       render();
     }
 
     function showKanjiList() {
       showPage('kanjiListPage');
+      themeSwitcher.style.display = 'none';
       renderKanjiList('all');
     }
 
@@ -1046,11 +1160,66 @@
 
     // Theme & Font
     themeSelect.addEventListener('change', (e) => {
-      document.body.setAttribute('data-theme', e.target.value);
+      changeTheme(e.target.value);
     });
 
     fontSelect.addEventListener('change', (e) => {
       document.body.setAttribute('data-font', e.target.value);
+    });
+
+    // Floating Theme Switcher
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const theme = btn.dataset.theme;
+        changeTheme(theme);
+      });
+    });
+
+    function changeTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      themeSelect.value = theme;
+      
+      // Update active button
+      document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector(`.theme-btn[data-theme="${theme}"]`).classList.add('active');
+    }
+
+    // Toggle Level Badge
+    toggleLevelBtn.addEventListener('click', () => {
+      showLevelBadge = !showLevelBadge;
+      toggleLevelBtn.classList.toggle('active');
+      
+      if (showLevelBadge) {
+        levelBadgeFront.classList.remove('hidden');
+        levelBadgeBack.classList.remove('hidden');
+        toggleLevelBtn.innerHTML = '👁️ Level Badge';
+      } else {
+        levelBadgeFront.classList.add('hidden');
+        levelBadgeBack.classList.add('hidden');
+        toggleLevelBtn.innerHTML = '👁️‍🗨️ Level Badge';
+      }
+    });
+
+    // Fullscreen
+    fullscreenBtn.addEventListener('click', async () => {
+      try {
+        if (!document.fullscreenElement) {
+          await document.documentElement.requestFullscreen();
+          fullscreenBtn.innerHTML = '⛶ Exit Fullscreen';
+        } else {
+          await document.exitFullscreen();
+          fullscreenBtn.innerHTML = '⛶ Fullscreen';
+        }
+      } catch (err) {
+        console.error('Fullscreen error:', err);
+      }
+    });
+
+    // Listen to fullscreen changes
+    document.addEventListener('fullscreenchange', () => {
+      if (!document.fullscreenElement) {
+        fullscreenBtn.innerHTML = '⛶ Fullscreen';
+      }
     });
 
     // Level Filter
